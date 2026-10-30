@@ -1,0 +1,5 @@
+# Unbuilt source for armv7l CPython 312. Status: unbuilt.
+numpy==2.5.4
+scipy==1.18.1
+PyWavelets==1.10.0
+matplotlib==3.11.2

@@ -1,0 +1,10 @@
+# aarch64 CPython 310 signal processing. Do not mix with x86-64 wheels.
+numpy==2.2.6
+scipy==1.15.3
+PyWavelets==1.8.0
+matplotlib==3.10.9
+EMD-signal==1.10.0
+filterpy==2.0.0
+pykalman==0.11.2
+pathos==0.3.5
+scikit-base==0.13.2

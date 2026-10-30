@@ -1,0 +1,5 @@
+# Unbuilt source for armv7l CPython 310. Status: unbuilt.
+numpy==2.2.6
+scipy==1.15.3
+PyWavelets==1.8.0
+matplotlib==3.10.9

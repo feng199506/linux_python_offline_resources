@@ -1,6 +1,6 @@
 # 下载与解压说明（Linux 通用科研 Python 离线资源库）
 
-本 Release 有 33 个**不压缩 tar 包**，合计约 36.1 GiB。wheel、deb 和系统镜像本身已经压缩，再压缩几乎不省空间。所有包都解压到**同一个目录**，彼此不重叠，可以只下需要的部分。
+本 Release 有 34 个**不压缩 tar 包**，合计约 36.5 GiB。wheel、deb 和系统镜像本身已经压缩，再压缩几乎不省空间。所有包都解压到**同一个目录**，彼此不重叠，可以只下需要的部分。
 
 > 这些资源是给 **Linux x86-64（glibc，参考 Ubuntu 22.04/24.04）** 和 ARM 开发板用的，不能在 Windows 上安装。在 Windows 上下载、解压，可以离线阅读全部说明；真正使用时，请把资源拷到 Linux 机器上。
 
@@ -15,6 +15,7 @@
 | `…_15–17_embedded_tools_boards_part*` | 嵌入式：电脑端工具链、开发板核心、树莓派 ARM wheel/deb、MicroPython/CircuitPython 固件、清单 | 做嵌入式时下载 |
 | `…_18–28_board_images_part*` | 开发板系统镜像（Armbian、Raspberry Pi OS、BeagleBoard、Radxa、StarFive、OpenWrt） | 只下所用板卡所在的 part |
 | `…_29–33_jetson_l4t_nvidia_part*` | NVIDIA Jetson L4T BSP 与示例根文件系统 | 只给 Jetson 用；受 NVIDIA 许可约束，单独成包 |
+| `linux_python_offline_34_update_supplement_signal_cn_en.tar` | 增量更新：信号处理定向补充 `python310/312_x86_64_supplement_signal/`、更新后的 `README_cn.md` 与离线首页 | **必下**，并且**最后解压**（覆盖 01 中的旧版同名文件） |
 
 各包的完整内容见下表；每个文件属于哪个包，见附件 `archive_index_cn.csv`。
 
@@ -53,6 +54,7 @@
 | `linux_python_offline_31_jetson_l4t_nvidia_part3_cn_en.tar` | NVIDIA Jetson L4T 第 3/5 部分（受 NVIDIA 许可约束，单独成包）：jetson_orin_l4t36.4.4/Tegra_Linux_Sample-Root-Filesystem_R36.4.4_aarch64.tbz2 … jetson_orin_l4t36.4.4/Tegra_Linux_Sample-Root-Filesystem_R36.4.4_aarch64.tbz2 | 1,746 MiB |
 | `linux_python_offline_32_jetson_l4t_nvidia_part4_cn_en.tar` | NVIDIA Jetson L4T 第 4/5 部分（受 NVIDIA 许可约束，单独成包）：jetson_orin_l4t36.4.4 … jetson_xavier_nx_l4t35.5.0 | 1,436 MiB |
 | `linux_python_offline_33_jetson_l4t_nvidia_part5_cn_en.tar` | NVIDIA Jetson L4T 第 5/5 部分（受 NVIDIA 许可约束，单独成包）：jetson_xavier_nx_l4t35.5.0/Tegra_Linux_Sample-Root-Filesystem_R35.5.0_aarch64.tbz2 … jetson_xavier_nx_l4t35.5.0/Tegra_Linux_Sample-Root-Filesystem_R35.5.0_aarch64.tbz2 | 1,453 MiB |
+| `linux_python_offline_34_update_supplement_signal_cn_en.tar` | 增量更新（10-30 第二次快照）：信号处理定向补充 python310/312_x86_64_supplement_signal/、更新后的 README_cn.md、资料库已独立.md、新 index_cn.html 等；在 01–33 之后解压并覆盖同名文件 | 360 MiB |
 
 ## 在 Windows 上解压并离线阅读
 
@@ -63,7 +65,11 @@ mkdir D:\lpo
 cd D:\lpo
 tar -xf "$env:USERPROFILE\Downloads\linux_python_offline_01_common_docs_runtimes_cn_en.tar"
 # 其余下载的包同样解压到 D:\lpo
+# 最后解压增量包（覆盖旧版 index_cn.html、README_cn.md 等）
+tar -xf "$env:USERPROFILE\Downloads\linux_python_offline_34_update_supplement_signal_cn_en.tar"
 ```
+
+Windows 自带 `tar` 默认覆盖同名文件。用 7-Zip 解压增量包时，选择“全部覆盖”。
 
 然后用浏览器打开 `D:\lpo\index_cn.html`，不需要联网：
 
@@ -73,7 +79,7 @@ tar -xf "$env:USERPROFILE\Downloads\linux_python_offline_01_common_docs_runtimes
 - 只有 http(s) 链接（上游来源和官方文档）需要联网。
 - 链接指向的包没有下载时，该链接打不开，这是正常的。
 
-目录越短越好。包内最长相对路径为 169 个字符，解压到 `D:\lpo\` 时不会超过 Windows 的 260 字符限制。7-Zip 也可以解压。包内没有符号链接和硬链接，Windows 自带 `tar` 与 7-Zip 解压结果相同。
+目录越短越好。包内最长相对路径为 174 个字符，解压到 `D:\lpo\` 时不会超过 Windows 的 260 字符限制。7-Zip 也可以解压。包内没有符号链接和硬链接，Windows 自带 `tar` 与 7-Zip 解压结果相同。
 
 ## 在 Linux 上使用
 
@@ -81,7 +87,7 @@ tar -xf "$env:USERPROFILE\Downloads\linux_python_offline_01_common_docs_runtimes
 
 ```bash
 mkdir -p ~/lpo && cd ~/lpo
-for t in /path/to/linux_python_offline_*_cn_en.tar; do tar -xf "$t"; done
+for t in /path/to/linux_python_offline_*_cn_en.tar; do tar -xf "$t"; done   # 按编号顺序，34 最后
 ```
 
 如果已经是在 Windows 上解压后拷过去的，就用 `bash install_offline_en.sh` 运行脚本，工具链目录用 `chmod -R u+x` 补回权限。
@@ -105,6 +111,9 @@ sha256sum environments/04_pytorch_cpu_py312/wheelhouse/*.whl
 - **没有放入发布包的内容**：原库的 `.git/`（本地历史）、`state/pip_cache/`（6.8 GB pip HTTP 缓存，不能当 wheelhouse 用，所需 wheel 都已在各组 `wheelhouse/` 中），以及 `__pycache__/`、`.pyc`。
 - **新增**：每个 Markdown 和 CSV 的同名 `.html`、离线首页 `index_cn.html`；Markdown 中存在的本地路径改成了可点击的相对链接；含中文的 CSV 加了 BOM。全部改动见 `offline_changes_cn.csv`。
 - wheel、deb、运行时、固件、镜像、锁定清单和安装脚本都**没有改动**。
+- 01–33 来自 10-30 06:40（中欧时间）的第一次快照，34 来自 07:45 的第二次快照，只含此后新增或变化的文件（信号处理补充目录、新的根 README 与 `资料库已独立.md`、重新生成的离线页面）。原库中原有的文件两次之间没有变化。
+- `dist_supplement_signal/*.zip` 没有收录：它们已经是同仓库 Release `lpo-supplement-signal-v1-20261030` 的附件，内容与补充目录相同。
+- 原库后来把综合学习资料 `knowledge/` 移出为独立资料库（见 `资料库已独立.md`），不在本仓库范围内。
 - `environments/22_engineering_py310` 在原库中就没有完成（只有需求清单，没有 wheel），3.12 版本和 `23_general_utils` 也没有下载。原样保留。
 
 ## 状态

@@ -19,3 +19,11 @@
 ## 嵌入式开发板
 
 见 [`embedded/README_cn.md`](embedded/README_cn.md)。电脑端工具与板端资源分开；固件不是 CPython wheel。
+
+## 综合技术离线资料库（独立目录）
+
+学习资料不在本仓库内，也不与大模型混放：
+
+- 工程/信号/控制等：`/root/engineering_offline_library/`（入口 `00_portal/总入口.md`）
+- 大模型：`/root/llm_lifecycle_resources/`
+- Agent：`/root/ai_agent_resources/`

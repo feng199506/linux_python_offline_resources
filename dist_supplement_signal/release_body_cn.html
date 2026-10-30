@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Linux 信号处理定向补充 v1</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a> · <a href="release_body_cn.md">Markdown 原文</a></div>
+<h1>Linux 信号处理定向补充 v1</h1>
+<p>对应原 Release：<a href="https://github.com/feng199506/linux_python_offline_resources/releases/tag/lpo-full-20261030"><code>lpo-full-20261030</code></a><br>
+本包是<strong>新的相关 Release</strong>，不覆盖原 tar 资产。</p>
+<p>目标：Linux x86-64 glibc 上的 CPython <strong>3.10 / 3.12</strong>。必须使用原树对应运行时，不要混装其它主版本。</p>
+<h2>本包做什么</h2>
+<p>在原 <code>03_signal_audio_image</code> 上增量追加（Kalman 相关 any-wheel 也从原 13 组复用进本包，便于只装 03 时一次装齐）：</p>
+<ul><li>傅里叶 / 频谱：复用原 03 NumPy、SciPy</li><li>小波：复用原 03 PyWavelets</li><li>EMD / EEMD / CEEMDAN：新增 <code>EMD-signal</code>（导入名 <strong><code>PyEMD</code></strong>）</li><li>Kalman：<code>filterpy</code> 实时滤波；<code>pykalman.smooth</code> 离线平滑（使用未来观测）</li></ul>
+<h2>开发板</h2>
+<p>原板端是 Raspberry Pi OS Bookworm <strong>Python 3.11</strong> GPIO 包，不是 3.10/3.12。
+<code>embedded_boards/aarch64/</code> 仅含 <strong>aarch64 + 对应 CPython 3.10/3.12</strong> 的 wheel（含 numpy/scipy/PyWavelets 的 aarch64 二进制）。
+<strong>没有</strong>把 x86-64 二进制放进板端目录。
+<code>embedded_boards/armv7l/</code>：EMD-signal / filterpy / pykalman 等 any-wheel 可用；numpy/scipy/PyWavelets/matplotlib <strong>无官方 armv7l wheel</strong>，源码与构建依赖单独保存，状态 <strong>未构建、未验证</strong>。</p>
+<p>示例状态：<strong>未执行验证</strong>。</p>
+<h2>资产</h2>
+<table><thead><tr><th>文件</th><th>SHA-256</th></tr></thead><tbody><tr><td><code>linux_python310_x86_64_supplement_signal_v1.zip</code></td><td><code>3ac4e560bcd84c7791540b6e987a54f56ffbe9302256da79f5dd7a4596c22deb</code></td></tr><tr><td><code>linux_python312_x86_64_supplement_signal_v1.zip</code></td><td><code>5a263eb1fd7d3319f3e0864a19f1bd5c00e647c32b2222cc09b02020720f80d0</code></td></tr></tbody></table>
+</body></html>

@@ -1,0 +1,6 @@
+﻿package,version,file,status,reason,bytes,sha256
+numpy,2.2.6,numpy-2.2.6.tar.gz,unbuilt,no compatible armv7 wheel for CPython 310,20276440,e29554e2bef54a90aa5cc07da6ce955accb83f21ab5de01a62c8478897b264fd
+scipy,1.15.3,scipy-1.15.3.tar.gz,unbuilt,no compatible armv7 wheel for CPython 310,59419214,eae3cf522bc7df64b42cad3925c876e1b0b6c35c1337c93e12c0f366f55b0eaf
+PyWavelets,1.8.0,pywavelets-1.8.0.tar.gz,unbuilt,no compatible armv7 wheel for CPython 310,3935274,f3800245754840adc143cbc29534a1b8fc4b8cff6e9d403326bd52b7bb5c35aa
+matplotlib,3.10.9,matplotlib-3.10.9.tar.gz,unbuilt,no compatible armv7 wheel for CPython 310,34811233,fd66508e8c6877d98e586654b608a0456db8d7e8a546eb1e2600efd957302358
+ninja,1.13.2,ninja-1.13.2.tar.gz,unbuilt,no compatible any wheel for CPython 310,243739,525bfa3fc88aa30a4467df270fd5be6f9fcae8061d54d4df74ea1dc5abd5a975
