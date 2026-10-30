@@ -1,0 +1,11 @@
+﻿component,category,needed_by,ubuntu_22.04,ubuntu_24.04,offline_status,official_docs,notes_cn
+glibc,c_runtime,all_wheels_and_runtimes,"libc6 2.35, assumed present","libc6 2.39, assumed present",not_downloaded_base_system,distro base,默认 wheel 按最高 manylinux_2_35 选择，覆盖 22.04/24.04。
+OpenMP libgomp,c_runtime,numpy/sklearn/xgboost/lightgbm 等,libgomp1,libgomp1,runtime_debs_if_resolved,https://packages.ubuntu.com/libgomp1,多数 manylinux wheel 已捆绑；仍登记系统包。
+libgfortran,c_runtime,scipy 等,libgfortran5,libgfortran5,runtime_debs_if_resolved,https://packages.ubuntu.com/libgfortran5,scipy 的 manylinux wheel 通常捆绑 Fortran 运行库。
+FFmpeg,audio_video,librosa/部分音视频 I/O,ffmpeg,ffmpeg,runtime_debs_if_resolved,https://ffmpeg.org/,Python 包安装完成不等于系统 FFmpeg 已具备。
+Graphviz,graphics,部分可视化、模型图,graphviz,graphviz,runtime_debs_if_resolved,https://graphviz.org/download/,python-graphviz 只是绑定，需要系统 graphviz 可执行文件。
+libsndfile,audio,soundfile,libsndfile1,libsndfile1,runtime_debs_if_resolved,https://github.com/bastibe/python-soundfile,wheel 可能捆绑；系统库作后备。
+CmdStan,compiler_toolchain,06_bayesian_mcmc / cmdstanpy,not_in_default,not_in_default,not_downloaded,https://mc-stan.org/cmdstanpy/,仅下载了 cmdstanpy wheel。Stan 需 C++ 工具链，单列待补。
+CUDA / GPU driver,gpu,可选 PyTorch/TF/ORT GPU,unknown_hardware,unknown_hardware,not_downloaded,https://docs.nvidia.com/cuda/,硬件未知，不下载多套 CUDA。见 pending_not_in_default/gpu_optional_cn.md。
+CPython build toolchain,compiler_toolchain,官方源码构建备选,build-essential 及开发库,build-essential 及开发库,build_debs_if_resolved,https://devguide.python.org/getting-started/setup-building/,源码包不能直接运行。未在本机 apt install。
+slycot,python_optional_compile,python-control 部分功能,needs_build,needs_build,not_downloaded,https://python-control.readthedocs.io/,无稳定通用 wheel 时不纳入默认集合。

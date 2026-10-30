@@ -1,0 +1,189 @@
+﻿变更类型,原相对路径,发布包内相对路径,说明
+离线化新增,,compatibility_issues_cn.html,compatibility_issues_cn.csv 的 HTML 表格视图
+CSV 加 BOM,external_dependencies_cn.csv,external_dependencies_cn.csv,UTF-8 加 BOM，Windows Excel 直接双击打开中文不乱码；内容不变
+离线化新增,,external_dependencies_cn.html,external_dependencies_cn.csv 的 HTML 表格视图
+离线化新增,,package_inventory_cn.html,package_inventory_cn.csv 的 HTML 表格视图
+CSV 加 BOM,progress_cn.csv,progress_cn.csv,UTF-8 加 BOM，Windows Excel 直接双击打开中文不乱码；内容不变
+离线化新增,,progress_cn.html,progress_cn.csv 的 HTML 表格视图
+离线化新增,,runtime_inventory_cn.html,runtime_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/board_cores_cn.html,embedded/inventories/board_cores_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/firmware_cn.html,embedded/inventories/firmware_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/host_and_board_python_cn.html,embedded/inventories/host_and_board_python_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/missing_cn.html,embedded/inventories/missing_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/system_deps_cn.html,embedded/inventories/system_deps_cn.csv 的 HTML 表格视图
+离线化新增,,embedded/inventories/toolchains_cn.html,embedded/inventories/toolchains_cn.csv 的 HTML 表格视图
+离线化新增,,environments/01_scientific_notebook_py310/wheel_inventory_cn.html,environments/01_scientific_notebook_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/01_scientific_notebook_py312/wheel_inventory_cn.html,environments/01_scientific_notebook_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/02_ml_stats_timeseries_em_py310/wheel_inventory_cn.html,environments/02_ml_stats_timeseries_em_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/02_ml_stats_timeseries_em_py312/wheel_inventory_cn.html,environments/02_ml_stats_timeseries_em_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/03_signal_audio_image_py310/wheel_inventory_cn.html,environments/03_signal_audio_image_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/03_signal_audio_image_py312/wheel_inventory_cn.html,environments/03_signal_audio_image_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/04_pytorch_cpu_py310/wheel_inventory_cn.html,environments/04_pytorch_cpu_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/04_pytorch_cpu_py312/wheel_inventory_cn.html,environments/04_pytorch_cpu_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/05_gpr_bayesopt_py310/wheel_inventory_cn.html,environments/05_gpr_bayesopt_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/05_gpr_bayesopt_py312/wheel_inventory_cn.html,environments/05_gpr_bayesopt_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/06_bayesian_mcmc_py310/wheel_inventory_cn.html,environments/06_bayesian_mcmc_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/06_bayesian_mcmc_py312/wheel_inventory_cn.html,environments/06_bayesian_mcmc_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/07_tensorflow_cpu_py310/wheel_inventory_cn.html,environments/07_tensorflow_cpu_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/07_tensorflow_cpu_py312/wheel_inventory_cn.html,environments/07_tensorflow_cpu_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/07b_gpflow_tf218_py310/wheel_inventory_cn.html,environments/07b_gpflow_tf218_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/07b_gpflow_tf218_py312/wheel_inventory_cn.html,environments/07b_gpflow_tf218_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/08_rl_basics_py310/wheel_inventory_cn.html,environments/08_rl_basics_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/08_rl_basics_py312/wheel_inventory_cn.html,environments/08_rl_basics_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/09_huggingface_llm_py310/wheel_inventory_cn.html,environments/09_huggingface_llm_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/09_huggingface_llm_py312/wheel_inventory_cn.html,environments/09_huggingface_llm_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/10_onnx_api_ui_py310/wheel_inventory_cn.html,environments/10_onnx_api_ui_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/10_onnx_api_ui_py312/wheel_inventory_cn.html,environments/10_onnx_api_ui_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/11_optimization_control_py310/wheel_inventory_cn.html,environments/11_optimization_control_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/11_optimization_control_py312/wheel_inventory_cn.html,environments/11_optimization_control_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/12_data_storage_py310/wheel_inventory_cn.html,environments/12_data_storage_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/12_data_storage_py312/wheel_inventory_cn.html,environments/12_data_storage_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/13_stats_timeseries_py310/wheel_inventory_cn.html,environments/13_stats_timeseries_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/13_stats_timeseries_py312/wheel_inventory_cn.html,environments/13_stats_timeseries_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/14_ml_tooling_py310/wheel_inventory_cn.html,environments/14_ml_tooling_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/14_ml_tooling_py312/wheel_inventory_cn.html,environments/14_ml_tooling_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/15_nlp_retrieval_py310/wheel_inventory_cn.html,environments/15_nlp_retrieval_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/15_nlp_retrieval_py312/wheel_inventory_cn.html,environments/15_nlp_retrieval_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/16_media_ocr_py310/wheel_inventory_cn.html,environments/16_media_ocr_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/16_media_ocr_py312/wheel_inventory_cn.html,environments/16_media_ocr_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/17_web_services_py310/wheel_inventory_cn.html,environments/17_web_services_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/17_web_services_py312/wheel_inventory_cn.html,environments/17_web_services_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/18_database_py310/wheel_inventory_cn.html,environments/18_database_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/18_database_py312/wheel_inventory_cn.html,environments/18_database_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/19_scraping_automation_py310/wheel_inventory_cn.html,environments/19_scraping_automation_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/19_scraping_automation_py312/wheel_inventory_cn.html,environments/19_scraping_automation_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/20_documents_py310/wheel_inventory_cn.html,environments/20_documents_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/20_documents_py312/wheel_inventory_cn.html,environments/20_documents_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/21_viz_dashboard_py310/wheel_inventory_cn.html,environments/21_viz_dashboard_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/21_viz_dashboard_py312/wheel_inventory_cn.html,environments/21_viz_dashboard_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/21b_desktop_pyside6_py310/wheel_inventory_cn.html,environments/21b_desktop_pyside6_py310/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,environments/21b_desktop_pyside6_py312/wheel_inventory_cn.html,environments/21b_desktop_pyside6_py312/wheel_inventory_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_22.04/build_debs/deb_manifest_cn.html,system_dependencies/ubuntu_22.04/build_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_22.04/expansion_debs/deb_manifest_cn.html,system_dependencies/ubuntu_22.04/expansion_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_22.04/runtime_debs/deb_manifest_cn.html,system_dependencies/ubuntu_22.04/runtime_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_24.04/build_debs/deb_manifest_cn.html,system_dependencies/ubuntu_24.04/build_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_24.04/expansion_debs/deb_manifest_cn.html,system_dependencies/ubuntu_24.04/expansion_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化新增,,system_dependencies/ubuntu_24.04/runtime_debs/deb_manifest_cn.html,system_dependencies/ubuntu_24.04/runtime_debs/deb_manifest_cn.csv 的 HTML 表格视图
+离线化改内容,README_cn.md,README_cn.md,10 处行内代码路径改为可点击的相对链接
+离线化新增,,README_cn.html,README_cn.md 的 HTML 版本
+离线化改内容,environments_overview_cn.md,environments_overview_cn.md,35 处行内代码路径改为可点击的相对链接
+离线化新增,,environments_overview_cn.html,environments_overview_cn.md 的 HTML 版本
+离线化改内容,embedded/README_cn.md,embedded/README_cn.md,9 处行内代码路径改为可点击的相对链接
+离线化新增,,embedded/README_cn.html,embedded/README_cn.md 的 HTML 版本
+离线化改内容,embedded/boards/raspberry_pi/README_cn.md,embedded/boards/raspberry_pi/README_cn.md,3 处行内代码路径改为可点击的相对链接
+离线化新增,,embedded/boards/raspberry_pi/README_cn.html,embedded/boards/raspberry_pi/README_cn.md 的 HTML 版本
+离线化改内容,embedded/host_linux_x86_64/python_host_comms_py310/README_cn.md,embedded/host_linux_x86_64/python_host_comms_py310/README_cn.md,2 处行内代码路径改为可点击的相对链接
+离线化新增,,embedded/host_linux_x86_64/python_host_comms_py310/README_cn.html,embedded/host_linux_x86_64/python_host_comms_py310/README_cn.md 的 HTML 版本
+离线化改内容,embedded/host_linux_x86_64/python_host_comms_py312/README_cn.md,embedded/host_linux_x86_64/python_host_comms_py312/README_cn.md,1 处行内代码路径改为可点击的相对链接
+离线化新增,,embedded/host_linux_x86_64/python_host_comms_py312/README_cn.html,embedded/host_linux_x86_64/python_host_comms_py312/README_cn.md 的 HTML 版本
+离线化改内容,embedded/linux_sbcs/OVERVIEW_cn.md,embedded/linux_sbcs/OVERVIEW_cn.md,2 处行内代码路径改为可点击的相对链接
+离线化新增,,embedded/linux_sbcs/OVERVIEW_cn.html,embedded/linux_sbcs/OVERVIEW_cn.md 的 HTML 版本
+离线化改内容,environments/01_scientific_notebook_py310/README_cn.md,environments/01_scientific_notebook_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/01_scientific_notebook_py310/README_cn.html,environments/01_scientific_notebook_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/01_scientific_notebook_py312/README_cn.md,environments/01_scientific_notebook_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/01_scientific_notebook_py312/README_cn.html,environments/01_scientific_notebook_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/02_ml_stats_timeseries_em_py310/README_cn.md,environments/02_ml_stats_timeseries_em_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/02_ml_stats_timeseries_em_py310/README_cn.html,environments/02_ml_stats_timeseries_em_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/02_ml_stats_timeseries_em_py312/README_cn.md,environments/02_ml_stats_timeseries_em_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/02_ml_stats_timeseries_em_py312/README_cn.html,environments/02_ml_stats_timeseries_em_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/03_signal_audio_image_py310/README_cn.md,environments/03_signal_audio_image_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/03_signal_audio_image_py310/README_cn.html,environments/03_signal_audio_image_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/03_signal_audio_image_py312/README_cn.md,environments/03_signal_audio_image_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/03_signal_audio_image_py312/README_cn.html,environments/03_signal_audio_image_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/04_pytorch_cpu_py310/README_cn.md,environments/04_pytorch_cpu_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/04_pytorch_cpu_py310/README_cn.html,environments/04_pytorch_cpu_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/04_pytorch_cpu_py312/README_cn.md,environments/04_pytorch_cpu_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/04_pytorch_cpu_py312/README_cn.html,environments/04_pytorch_cpu_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/05_gpr_bayesopt_py310/README_cn.md,environments/05_gpr_bayesopt_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/05_gpr_bayesopt_py310/README_cn.html,environments/05_gpr_bayesopt_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/05_gpr_bayesopt_py312/README_cn.md,environments/05_gpr_bayesopt_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/05_gpr_bayesopt_py312/README_cn.html,environments/05_gpr_bayesopt_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/06_bayesian_mcmc_py310/README_cn.md,environments/06_bayesian_mcmc_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/06_bayesian_mcmc_py310/README_cn.html,environments/06_bayesian_mcmc_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/06_bayesian_mcmc_py312/README_cn.md,environments/06_bayesian_mcmc_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/06_bayesian_mcmc_py312/README_cn.html,environments/06_bayesian_mcmc_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/07_tensorflow_cpu_py310/README_cn.md,environments/07_tensorflow_cpu_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/07_tensorflow_cpu_py310/README_cn.html,environments/07_tensorflow_cpu_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/07_tensorflow_cpu_py312/README_cn.md,environments/07_tensorflow_cpu_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/07_tensorflow_cpu_py312/README_cn.html,environments/07_tensorflow_cpu_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/07b_gpflow_tf218_py310/README_cn.md,environments/07b_gpflow_tf218_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/07b_gpflow_tf218_py310/README_cn.html,environments/07b_gpflow_tf218_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/07b_gpflow_tf218_py312/README_cn.md,environments/07b_gpflow_tf218_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/07b_gpflow_tf218_py312/README_cn.html,environments/07b_gpflow_tf218_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/08_rl_basics_py310/README_cn.md,environments/08_rl_basics_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/08_rl_basics_py310/README_cn.html,environments/08_rl_basics_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/08_rl_basics_py312/README_cn.md,environments/08_rl_basics_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/08_rl_basics_py312/README_cn.html,environments/08_rl_basics_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/09_huggingface_llm_py310/README_cn.md,environments/09_huggingface_llm_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/09_huggingface_llm_py310/README_cn.html,environments/09_huggingface_llm_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/09_huggingface_llm_py312/README_cn.md,environments/09_huggingface_llm_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/09_huggingface_llm_py312/README_cn.html,environments/09_huggingface_llm_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/10_onnx_api_ui_py310/README_cn.md,environments/10_onnx_api_ui_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/10_onnx_api_ui_py310/README_cn.html,environments/10_onnx_api_ui_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/10_onnx_api_ui_py312/README_cn.md,environments/10_onnx_api_ui_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/10_onnx_api_ui_py312/README_cn.html,environments/10_onnx_api_ui_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/11_optimization_control_py310/README_cn.md,environments/11_optimization_control_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/11_optimization_control_py310/README_cn.html,environments/11_optimization_control_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/11_optimization_control_py312/README_cn.md,environments/11_optimization_control_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/11_optimization_control_py312/README_cn.html,environments/11_optimization_control_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/12_data_storage_py310/README_cn.md,environments/12_data_storage_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/12_data_storage_py310/README_cn.html,environments/12_data_storage_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/12_data_storage_py312/README_cn.md,environments/12_data_storage_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/12_data_storage_py312/README_cn.html,environments/12_data_storage_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/13_stats_timeseries_py310/README_cn.md,environments/13_stats_timeseries_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/13_stats_timeseries_py310/README_cn.html,environments/13_stats_timeseries_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/13_stats_timeseries_py312/README_cn.md,environments/13_stats_timeseries_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/13_stats_timeseries_py312/README_cn.html,environments/13_stats_timeseries_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/14_ml_tooling_py310/README_cn.md,environments/14_ml_tooling_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/14_ml_tooling_py310/README_cn.html,environments/14_ml_tooling_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/14_ml_tooling_py312/README_cn.md,environments/14_ml_tooling_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/14_ml_tooling_py312/README_cn.html,environments/14_ml_tooling_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/15_nlp_retrieval_py310/README_cn.md,environments/15_nlp_retrieval_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/15_nlp_retrieval_py310/README_cn.html,environments/15_nlp_retrieval_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/15_nlp_retrieval_py312/README_cn.md,environments/15_nlp_retrieval_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/15_nlp_retrieval_py312/README_cn.html,environments/15_nlp_retrieval_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/16_media_ocr_py310/README_cn.md,environments/16_media_ocr_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/16_media_ocr_py310/README_cn.html,environments/16_media_ocr_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/16_media_ocr_py312/README_cn.md,environments/16_media_ocr_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/16_media_ocr_py312/README_cn.html,environments/16_media_ocr_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/17_web_services_py310/README_cn.md,environments/17_web_services_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/17_web_services_py310/README_cn.html,environments/17_web_services_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/17_web_services_py312/README_cn.md,environments/17_web_services_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/17_web_services_py312/README_cn.html,environments/17_web_services_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/18_database_py310/README_cn.md,environments/18_database_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/18_database_py310/README_cn.html,environments/18_database_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/18_database_py312/README_cn.md,environments/18_database_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/18_database_py312/README_cn.html,environments/18_database_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/19_scraping_automation_py310/README_cn.md,environments/19_scraping_automation_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/19_scraping_automation_py310/README_cn.html,environments/19_scraping_automation_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/19_scraping_automation_py312/README_cn.md,environments/19_scraping_automation_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/19_scraping_automation_py312/README_cn.html,environments/19_scraping_automation_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/20_documents_py310/README_cn.md,environments/20_documents_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/20_documents_py310/README_cn.html,environments/20_documents_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/20_documents_py312/README_cn.md,environments/20_documents_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/20_documents_py312/README_cn.html,environments/20_documents_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/21_viz_dashboard_py310/README_cn.md,environments/21_viz_dashboard_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/21_viz_dashboard_py310/README_cn.html,environments/21_viz_dashboard_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/21_viz_dashboard_py312/README_cn.md,environments/21_viz_dashboard_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/21_viz_dashboard_py312/README_cn.html,environments/21_viz_dashboard_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/21b_desktop_pyside6_py310/README_cn.md,environments/21b_desktop_pyside6_py310/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/21b_desktop_pyside6_py310/README_cn.html,environments/21b_desktop_pyside6_py310/README_cn.md 的 HTML 版本
+离线化改内容,environments/21b_desktop_pyside6_py312/README_cn.md,environments/21b_desktop_pyside6_py312/README_cn.md,12 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/21b_desktop_pyside6_py312/README_cn.html,environments/21b_desktop_pyside6_py312/README_cn.md 的 HTML 版本
+离线化改内容,environments/22_engineering_py310/README_cn.md,environments/22_engineering_py310/README_cn.md,2 处行内代码路径改为可点击的相对链接
+离线化新增,,environments/22_engineering_py310/README_cn.html,environments/22_engineering_py310/README_cn.md 的 HTML 版本
+离线化改内容,guides/README_cn.md,guides/README_cn.md,3 处行内代码路径改为可点击的相对链接
+离线化新增,,guides/README_cn.html,guides/README_cn.md 的 HTML 版本
+离线化改内容,guides/常用工具与包用途索引_cn.md,guides/常用工具与包用途索引_cn.md,8 处行内代码路径改为可点击的相对链接
+离线化新增,,guides/常用工具与包用途索引_cn.html,guides/常用工具与包用途索引_cn.md 的 HTML 版本
+离线化改内容,guides/常见任务快速入门_cn.md,guides/常见任务快速入门_cn.md,27 处行内代码路径改为可点击的相对链接
+离线化新增,,guides/常见任务快速入门_cn.html,guides/常见任务快速入门_cn.md 的 HTML 版本
+离线化改内容,guides/离线安装与使用_cn.md,guides/离线安装与使用_cn.md,17 处行内代码路径改为可点击的相对链接
+离线化新增,,guides/离线安装与使用_cn.html,guides/离线安装与使用_cn.md 的 HTML 版本
+离线化新增,,pending_not_in_default/alpine_musl_cn.html,pending_not_in_default/alpine_musl_cn.md 的 HTML 版本
+离线化新增,,pending_not_in_default/arm64_cn.html,pending_not_in_default/arm64_cn.md 的 HTML 版本
+离线化新增,,pending_not_in_default/gpu_optional_cn.html,pending_not_in_default/gpu_optional_cn.md 的 HTML 版本
+离线化新增,,pending_not_in_default/other_distros_cn.html,pending_not_in_default/other_distros_cn.md 的 HTML 版本
+离线化新增,,runtimes/cpython_official_source/build_from_source_cn.html,runtimes/cpython_official_source/build_from_source_cn.md 的 HTML 版本
+离线化新增,,runtimes/python_build_standalone/notes_cn.html,runtimes/python_build_standalone/notes_cn.md 的 HTML 版本
+离线化新增,,index_cn.html,离线首页：说明文档、每个环境组、运行时、系统 deb、嵌入式资源和登记表的本地链接

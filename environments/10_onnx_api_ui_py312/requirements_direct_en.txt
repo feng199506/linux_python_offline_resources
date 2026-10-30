@@ -1,0 +1,13 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+onnx
+onnxruntime
+fastapi
+uvicorn
+pydantic
+gradio
+streamlit
+Pillow

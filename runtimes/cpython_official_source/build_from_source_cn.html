@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>CPython 官方源码包（备选）</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../../index_cn.html">← 离线首页 index_cn.html</a> · <a href="build_from_source_cn.md">Markdown 原文</a></div>
+<h1>CPython 官方源码包（备选）</h1>
+<p><code>Python-*.tar.xz</code> 是 python.org 官方源码。<strong>源码包本身不能直接运行。</strong></p>
+<p>从源码构建仍需要目标机器上的编译器与开发库，例如 Ubuntu 上：</p>
+<pre><code>sudo apt install build-essential pkg-config libssl-dev zlib1g-dev libffi-dev \
+  libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev libncurses-dev \
+  uuid-dev tk-dev libgdbm-dev libgdbm-compat-dev
+./configure --prefix=/opt/python-3.x.x --enable-optimizations
+make -j&quot;$(nproc)&quot;
+make install</code></pre>
+<p>本仓库若提供 <code>system_dependencies/*/build_debs/</code>，也只是按 Ubuntu 官方索引解析的 <code>.deb</code> 闭包，<strong>不能</strong>替代在对应发行版上用 <code>dpkg</code>/<code>apt</code> 正确安装，且本轮没有在当前机器安装它们。</p>
+<p>官方构建指南：<a href="https://devguide.python.org/getting-started/setup-building/">https://devguide.python.org/getting-started/setup-building/</a></p>
+</body></html>

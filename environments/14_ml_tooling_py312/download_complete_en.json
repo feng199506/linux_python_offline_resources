@@ -1,0 +1,12 @@
+{
+  "status": "partial",
+  "failed_packages": [
+    "lime"
+  ],
+  "rejected": [],
+  "wheel_count": 194,
+  "deps_complete": true,
+  "missing_runtime_deps": [],
+  "excluded_gpu_deps": [],
+  "added_from_closure": []
+}

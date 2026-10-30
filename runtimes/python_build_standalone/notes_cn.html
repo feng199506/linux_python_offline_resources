@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>python-build-standalone 运行时说明</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../../index_cn.html">← 离线首页 index_cn.html</a> · <a href="notes_cn.md">Markdown 原文</a></div>
+<h1>python-build-standalone 运行时说明</h1>
+<p>这些文件 <strong>不是</strong> python.org 官方 Linux 二进制。</p>
+<ul><li>上游项目：<a href="https://github.com/astral-sh/python-build-standalone">https://github.com/astral-sh/python-build-standalone</a></li><li>文档：<a href="https://docs.astral.sh/python-build-standalone/">https://docs.astral.sh/python-build-standalone/</a></li><li>许可证：项目自身主要为 MIT；内含 CPython（PSF）及其它第三方库许可证，详见上游发行说明</li><li>构建来源：Astral 发布的 <code>install_only</code> 归档，目标三元组 <code>x86_64-unknown-linux-gnu</code></li><li>最低 glibc（上游文档）：多数目标为 <strong>2.17</strong>（覆盖 Ubuntu 14.04+；本仓库默认参考场景为 Ubuntu 22.04/24.04）</li><li>选用 <code>x86_64</code> 基线构建，不用 <code>x86_64_v2/v3/v4</code>，也不用 musl</li></ul>
+<p>解压后得到 <code>python/bin/python3</code>，可直接作为 <code>PYTHON_BIN</code> 创建 venv。
+本准备过程 <strong>没有执行</strong> 这些运行时。</p>
+</body></html>

@@ -1,0 +1,11 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+scipy
+pandas
+gpytorch
+linear_operator
+botorch
+torch==2.14.1+cpu

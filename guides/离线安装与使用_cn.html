@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>离线安装与使用</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a> · <a href="%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8_cn.md">Markdown 原文</a></div>
+<h1>离线安装与使用</h1>
+<p>本文档随 <strong>增量补充包</strong>（环境组 12–21b、嵌入式 <a href="../embedded/README_cn.html"><code>embedded/</code></a>、本 <a href="README_cn.html"><code>guides/</code></a> 目录）一起发布。<br>
+原基础集合（环境组 01–11 的 wheelhouse、lock、安装脚本）<strong>保持不变</strong>，不要重新打包或覆盖原 Release 中的二进制文件。</p>
+<p>本轮只下载与静态检查，<strong>没有</strong>在目标 Linux 上创建 venv、导入包或连接硬件。下文步骤供日后在目标机执行；示例均标为未验证。</p>
+<h2>1. 两套资源如何配合</h2>
+<table><thead><tr><th>部分</th><th>路径</th><th>内容</th><th>与原 Release 关系</th></tr></thead><tbody><tr><td>原基础集合</td><td><code>environments/01_*</code> … <code>11_*</code>、<code>07b_*</code></td><td>科学计算、传统 ML、信号、PyTorch/TF CPU、HF 库、ONNX/API、优化</td><td>原 Release；本文档不改其中 wheel</td></tr><tr><td>增量补充</td><td><code>environments/12_*</code> … <code>21b_*</code></td><td>数据存储、量化、ML 工具、NLP、媒体/OCR、Web、数据库、爬虫、文档、可视化、PySide6</td><td>新增环境，单独安装</td></tr><tr><td>嵌入式补充</td><td><a href="../embedded/README_cn.html"><code>embedded/</code></a></td><td>主机串口/CAN/MQTT 与板端资源</td><td>新增；<strong>不是</strong> x86-64 科学计算环境</td></tr><tr><td>运行时</td><td><a href="../runtimes/"><code>runtimes/</code></a></td><td>python-build-standalone 3.10.22 / 3.12.16；官方 CPython 源码</td><td>原集合已有</td></tr><tr><td>系统 deb</td><td><a href="../system_dependencies/ubuntu_22.04/"><code>system_dependencies/ubuntu_22.04/</code></a>、<code>ubuntu_24.04/</code></td><td>FFmpeg、Tesseract、Poppler、Cairo 等</td><td>按发行版选用，不能混装</td></tr><tr><td>说明文档</td><td><a href="README_cn.html"><code>guides/</code></a></td><td>本页、用途索引、任务入门</td><td>只随补充包发布</td></tr></tbody></table>
+<p>Windows 资源在 <code>windows_python_offline_resources/</code>，<strong>禁止</strong>与本 Linux 包混装。</p>
+<p>未完成、不要当作已交付：</p>
+<ul><li><a href="../environments/22_engineering_py310/README_cn.html"><code>environments/22_engineering_py310</code></a>：仅有直接依赖清单，无 lock / wheelhouse / 安装脚本。</li><li><code>23_general_utils_*</code>：未下载。</li><li>Jetson CUDA、Playwright 浏览器内核、CmdStan 可执行文件、多数模型权重：未纳入默认集合。</li></ul>
+<h2>2. 选择解释器</h2>
+<p>目标机：<code>uname -m</code> 为 <code>x86_64</code>，glibc 系统（Ubuntu 22.04 / 24.04 为参考）。不要用 musl、ARM64 主机解释器安装这些 manylinux x86-64 wheel。</p>
+<table><thead><tr><th>环境后缀</th><th>需要的解释器</th><th>推荐运行时文件</th><th>说明</th></tr></thead><tbody><tr><td><code>*_py310</code></td><td>CPython <strong>3.10</strong> x86-64</td><td><a href="../runtimes/python_build_standalone/cpython-3.10.22+20261001-x86_64-unknown-linux-gnu-install_only.tar.gz"><code>runtimes/python_build_standalone/cpython-3.10.22+20261001-x86_64-unknown-linux-gnu-install_only.tar.gz</code></a></td><td>第三方可解压运行时，<strong>不是</strong> python.org 官方 Linux 二进制</td></tr><tr><td><code>*_py312</code></td><td>CPython <strong>3.12</strong> x86-64</td><td><a href="../runtimes/python_build_standalone/cpython-3.12.16+20261026-x86_64-unknown-linux-gnu-install_only.tar.gz"><code>runtimes/python_build_standalone/cpython-3.12.16+20261026-x86_64-unknown-linux-gnu-install_only.tar.gz</code></a></td><td>新项目优先用 3.12</td></tr></tbody></table>
+<pre><code># 示例：解压 3.10 运行时（示例未验证）
+tar -xzf runtimes/python_build_standalone/cpython-3.10.22+20261001-x86_64-unknown-linux-gnu-install_only.tar.gz -C /opt
+export PYTHON_BIN=/opt/python/bin/python3
+&quot;$PYTHON_BIN&quot; -V    # 应显示 3.10.22</code></pre>
+<p>备选：<a href="../runtimes/cpython_official_source/Python-3.10.22.tar.xz"><code>runtimes/cpython_official_source/Python-3.10.22.tar.xz</code></a>（或 3.12.16）是<strong>源码</strong>，不能直接运行，需要本机编译器与 <code>system_dependencies/*/build_debs</code>。本轮未编译。</p>
+<p>不要：</p>
+<ul><li>把 3.10 与 3.12 的 wheel 装进同一个 venv。</li><li>用系统 <code>python3</code>（若版本不是 3.10/3.12）强行安装。</li><li>把 ARM 板端 wheel 装到 x86-64 主机，或反过来。</li></ul>
+<h2>3. 选择环境组（不要合并安装）</h2>
+<p>按任务选<strong>一组</strong>，不要把多组 lock 装进同一 venv。</p>
+<table><thead><tr><th>任务</th><th>优先环境</th><th>不要混入</th></tr></thead><tbody><tr><td>表格 / Notebook / 绘图</td><td><code>01_scientific_notebook_*</code></td><td>深度学习框架</td></tr><tr><td>列存 / Parquet / DuckDB</td><td><code>12_data_storage_*</code></td><td>—</td></tr><tr><td>量化指标 / 回测</td><td><code>13_stats_timeseries_*</code></td><td>实时行情源（需联网）</td></tr><tr><td>树模型 / sklearn</td><td><code>02_ml_stats_timeseries_em_*</code></td><td>PyTorch / TensorFlow</td></tr><tr><td>特征 / SHAP / Optuna</td><td><code>14_ml_tooling_*</code></td><td>训练框架</td></tr><tr><td>PyTorch CPU</td><td><code>04_pytorch_cpu_*</code></td><td>CUDA 构建</td></tr><tr><td>TensorFlow CPU</td><td><code>07_tensorflow_cpu_*</code></td><td><code>07b</code>（TF 2.18 + numpy&lt;2）</td></tr><tr><td>GPflow</td><td><code>07b_gpflow_tf218_*</code></td><td><code>07</code>（TF 2.21）</td></tr><tr><td>中文分词 / RAG 库</td><td><code>15_nlp_retrieval_*</code></td><td>权重、spaCy 模型</td></tr><tr><td>PDF / Office</td><td><code>20_documents_*</code></td><td>无 Pandoc 时不要用 pypandoc</td></tr><tr><td>音视频 / OCR</td><td><code>16_media_ocr_*</code></td><td>无 Tesseract/FFmpeg 时功能不完整</td></tr><tr><td>浏览器自动化</td><td><code>19_scraping_automation_*</code></td><td>无浏览器内核时 Playwright/Selenium 不能跑</td></tr><tr><td>串口 / 开发板（主机）</td><td><a href="../embedded/host_linux_x86_64/python_host_comms_py310/README_cn.html"><code>embedded/host_linux_x86_64/python_host_comms_py310</code></a> 或 <code>_py312</code></td><td>不要拷到树莓派</td></tr></tbody></table>
+<p>同一编号的 <code>py310</code> 与 <code>py312</code> 选一个即可。包版本可能不同（例如 NumPy 3.10 环境为 2.2.6，3.12 环境为 2.5.4）。</p>
+<h2>4. 创建环境并离线安装 Python 包</h2>
+<p>在目标机进入某一环境目录：</p>
+<pre><code>cd environments/01_scientific_notebook_py310
+export PYTHON_BIN=/path/to/python3.10    # 必须匹配本目录的 3.10
+bash ./install_offline_en.sh
+./venv/bin/python ./check_environment_en.py</code></pre>
+<p>脚本行为（已写在各目录 <code>install_offline_en.sh</code>，本轮未执行）：</p>
+<ul><li>用 <code>PYTHON_BIN</code> 新建 <code>venv/</code>（可用 <code>VENV_DIR</code> 改路径）。</li><li><code>pip install --no-index --find-links wheelhouse -r requirements_lock_en.txt</code></li><li>失败即停止，<strong>不会</strong>回退到 PyPI。</li><li>不使用 sudo，不改系统 site-packages。</li></ul>
+<p>增量组（12–21b）用法相同。源码包（如 <code>15_*</code> 的 <code>sdist_needs_build/jieba-0.42.1.tar.gz</code>）<strong>不在</strong> lock 的默认 wheel 安装里；需要时再对 sdist 单独 <code>pip install --no-index</code>，且本轮未验证能否纯离线装上。</p>
+<p>主机通信环境目前只有 wheelhouse，没有 <code>install_offline_en.sh</code>。自行：</p>
+<pre><code># 示例未验证
+&quot;$PYTHON_BIN&quot; -m venv /tmp/host_comms
+/tmp/host_comms/bin/python -m pip install --no-index \
+  --find-links embedded/host_linux_x86_64/python_host_comms_py310/wheelhouse \
+  pyserial paho-mqtt pymodbus python-can pymavlink</code></pre>
+<p><code>esptool</code>、<code>rshell</code> 仅有 sdist，见该目录 <code>sdist_needs_build/</code>。</p>
+<h2>5. 外部程序与系统库</h2>
+<p>Python wheel 装成功 <strong>不等于</strong> 下列工具可用。按 Ubuntu 版本安装对应 deb 目录，不要交叉安装 22.04/24.04 的包。本轮 <strong>没有</strong> 在本机 <code>apt install</code>。</p>
+<table><thead><tr><th>用途</th><th>需要的外部程序</th><th>本库位置</th><th>安装后仍缺什么</th></tr></thead><tbody><tr><td>音视频解码</td><td>FFmpeg</td><td><code>system_dependencies/&lt;suite&gt;/runtime_debs</code> 与 expansion_debs</td><td>需目标机 dpkg/apt 安装</td></tr><tr><td>OCR（pytesseract）</td><td>Tesseract + 语言包</td><td>expansion_debs 中的 <code>tesseract-ocr</code>、<code>tesseract-ocr-chi-sim</code> 等</td><td>未执行安装；未验证中文语言包路径</td></tr><tr><td>PDF 转图（pdf2image）</td><td>Poppler <code>pdftoppm</code></td><td>expansion_debs</td><td>同上</td></tr><tr><td>WeasyPrint</td><td>Cairo / Pango / GDK-Pixbuf</td><td>expansion_debs</td><td>缺系统库会导入失败</td></tr><tr><td>pypandoc</td><td>Pandoc 可执行文件</td><td><a href="../external_runtimes/pandoc/"><code>external_runtimes/pandoc/</code></a> 目前主要是元数据，<strong>不能</strong>当成已齐备的 pandoc 二进制</td><td>需自行准备 pandoc</td></tr><tr><td>Playwright</td><td>浏览器内核</td><td><strong>未下载</strong></td><td>官方 <code>playwright install</code> 默认要联网</td></tr><tr><td>Selenium</td><td>浏览器 + 驱动</td><td><strong>未下载</strong>；<code>webdriver-manager</code> 会试图联网取驱动</td><td>离线需自备浏览器</td></tr><tr><td>Prophet / cmdstanpy</td><td>CmdStan</td><td><strong>未下载</strong></td><td>仅有 Python 包</td></tr><tr><td>Graphviz 出图</td><td><code>dot</code></td><td>runtime_debs</td><td>python 绑定不够</td></tr><tr><td>官方 CPython 源码构建</td><td>gcc 等</td><td><code>build_debs</code></td><td>未编译</td></tr></tbody></table>
+<p>调用外部工具的原则：先确认 <code>$PATH</code> 中有可执行文件，再跑 Python 包装器。不要把 “wheel 已下载” 写成 “开箱即用”。</p>
+<h2>6. 模型权重、语料与账号</h2>
+<p>下列库<strong>只含代码</strong>：</p>
+<ul><li><code>09_huggingface_llm_*</code>：<code>transformers</code> 5.x + PyTorch CPU。<code>from_pretrained(...)</code> 默认访问 Hugging Face Hub，需要联网或事先放到本地缓存。</li><li><code>15_nlp_retrieval_*</code>：<code>spacy</code>、<code>nltk</code> 无语料/模型包；Chroma/LanceDB 是库，不是已建好的向量库。</li><li>RapidOCR：wheel 较大，可能带 ONNX 文件，<strong>本轮未推理</strong>，不能承诺完全离线。</li><li>量化：<code>quantstats</code> 依赖 <code>yfinance</code>，拉行情要联网。</li></ul>
+<p>GPU/CUDA 见 <a href="../pending_not_in_default/gpu_optional_cn.html"><code>pending_not_in_default/gpu_optional_cn.md</code></a>，未下载。</p>
+<h2>7. 开发板与微控制器</h2>
+<ul><li>主机调试：<a href="../embedded/host_linux_x86_64/"><code>embedded/host_linux_x86_64/</code></a>（x86-64 glibc）。</li><li>树莓派板端：<a href="../embedded/boards/raspberry_pi/README_cn.html"><code>embedded/boards/raspberry_pi/</code></a>（Python 3.11，arm64/armhf），<strong>不能</strong>用主机 3.10/3.12 wheel。</li><li>Arduino / ESP32 / Pico / STM32 固件在 <a href="../embedded/firmware/"><code>embedded/firmware/</code></a>，不计入 Linux 开发板 CPython 环境。</li><li>未连接硬件、未烧录。串口示例见 <a href="%E5%B8%B8%E8%A7%81%E4%BB%BB%E5%8A%A1%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8_cn.html"><code>guides/常见任务快速入门_cn.md</code></a>。</li></ul>
+<h2>8. 检查是否安装成功</h2>
+<p>只有在<strong>目标 Linux</strong> 上 <code>check_environment_en.py</code> 写出 <code>ok: true</code> 时，才把该组记为“已安装验证”。<br>
+当前仓库内各组状态仍是：<strong>已下载、未做目标机验证</strong>。</p>
+</body></html>

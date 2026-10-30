@@ -1,0 +1,15 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+torch
+transformers
+datasets
+tokenizers
+accelerate
+peft
+trl
+safetensors
+huggingface_hub
+sentencepiece

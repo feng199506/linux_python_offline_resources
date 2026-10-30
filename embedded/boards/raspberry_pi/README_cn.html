@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>树莓派板端 Python 资源</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../../../index_cn.html">← 离线首页 index_cn.html</a> · <a href="README_cn.md">Markdown 原文</a></div>
+<h1>树莓派板端 Python 资源</h1>
+<p>适用：Raspberry Pi OS Bookworm，<strong>板端</strong> CPython 3.11。<br>
+<strong>不能</strong>使用仓库里 Linux x86-64 的 3.10/3.12 wheel。</p>
+<h2>本组能做什么</h2>
+<p>在树莓派上调用 GPIO、I2C/SPI 包装、串口和部分 Adafruit Blinka 库。摄像头以系统 <code>python3-picamera2</code> 等 deb 为主，不是所有功能都有 wheel。</p>
+<table><thead><tr><th>目录</th><th>架构</th><th>说明</th></tr></thead><tbody><tr><td><a href="bookworm_arm64/"><code>bookworm_arm64/</code></a></td><td>aarch64</td><td>板端 wheel 与系统 deb</td></tr><tr><td><a href="bookworm_armhf/"><code>bookworm_armhf/</code></a></td><td>armv7</td><td>板端 wheel 与系统 deb</td></tr></tbody></table>
+<p>专用库（如 <code>RPi.GPIO</code>）只给树莓派，不要套到 ODROID/Orange Pi。<br>
+未在目标板上安装或接线验证。主机串口调试见 <a href="../../host_linux_x86_64/"><code>embedded/host_linux_x86_64/</code></a>。</p>
+<p>文档：<a href="https://gpiozero.readthedocs.io/">gpiozero</a> · <a href="https://docs.circuitpython.org/projects/blinka/">Blinka</a></p>
+</body></html>

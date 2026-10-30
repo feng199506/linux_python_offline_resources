@@ -1,0 +1,12 @@
+{
+  "status": "downloaded",
+  "failed_packages": [],
+  "rejected": [],
+  "wheel_count": 35,
+  "deps_complete": true,
+  "missing_runtime_deps": [],
+  "excluded_gpu_deps": [
+    "nvidia-nccl-cu12"
+  ],
+  "added_from_closure": []
+}

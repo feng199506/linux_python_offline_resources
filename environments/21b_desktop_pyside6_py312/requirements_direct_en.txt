@@ -1,0 +1,10 @@
+pip
+setuptools
+wheel
+packaging
+PySide6
+qtpy
+pyqtgraph
+qtawesome
+numpy
+pygments

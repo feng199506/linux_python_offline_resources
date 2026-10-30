@@ -1,0 +1,591 @@
+{
+  "completed": {
+    "01_scientific_notebook_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 128,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "01_scientific_notebook_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 124,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "02_ml_stats_timeseries_em_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 35,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [
+        "nvidia-nccl-cu12"
+      ],
+      "added_from_closure": []
+    },
+    "02_ml_stats_timeseries_em_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 34,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [
+        "nvidia-nccl-cu13"
+      ],
+      "added_from_closure": []
+    },
+    "03_signal_audio_image_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 73,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "03_signal_audio_image_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 69,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "04_pytorch_cpu_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 17,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "04_pytorch_cpu_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 17,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "05_gpr_bayesopt_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 35,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "05_gpr_bayesopt_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 32,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "06_bayesian_mcmc_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 45,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "06_bayesian_mcmc_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 41,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "07_tensorflow_cpu_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 33,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "07_tensorflow_cpu_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 33,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "07b_gpflow_tf218_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 53,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "07b_gpflow_tf218_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 52,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "08_rl_basics_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 37,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "08_rl_basics_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 36,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "09_huggingface_llm_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 63,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "09_huggingface_llm_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 60,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "10_onnx_api_ui_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 84,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "10_onnx_api_ui_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 77,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "11_optimization_control_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 28,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "11_optimization_control_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 31,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    }
+  },
+  "issues": [
+    {
+      "environment": "04_pytorch_cpu_py310",
+      "severity": "python",
+      "item": "==torch",
+      "detail": "no compatible binary wheel under default linux x86-64 tags"
+    },
+    {
+      "environment": "04_pytorch_cpu_py310",
+      "severity": "python",
+      "item": "==torchvision",
+      "detail": "no compatible binary wheel under default linux x86-64 tags"
+    },
+    {
+      "environment": "04_pytorch_cpu_py310",
+      "severity": "python",
+      "item": "==torchaudio",
+      "detail": "no compatible binary wheel under default linux x86-64 tags"
+    },
+    {
+      "environment": "01_scientific_notebook_py310",
+      "severity": "dependency",
+      "item": "pywinpty",
+      "detail": "runtime Requires-Dist not present in wheelhouse after closure download"
+    },
+    {
+      "environment": "01_scientific_notebook_py312",
+      "severity": "dependency",
+      "item": "pywinpty",
+      "detail": "runtime Requires-Dist not present in wheelhouse after closure download"
+    },
+    {
+      "environment": "02_ml_stats_timeseries_em_py310",
+      "severity": "gpu_excluded",
+      "item": "nvidia-nccl-cu12",
+      "detail": "GPU/NVIDIA transitive dependency excluded from default CPU set"
+    },
+    {
+      "environment": "02_ml_stats_timeseries_em_py312",
+      "severity": "gpu_excluded",
+      "item": "nvidia-nccl-cu13",
+      "detail": "GPU/NVIDIA transitive dependency excluded from default CPU set"
+    },
+    {
+      "environment": "02_ml_stats_timeseries_em_py310",
+      "severity": "gpu_excluded",
+      "item": "nvidia-nccl-cu12",
+      "detail": "GPU/NVIDIA transitive dependency excluded from default CPU set"
+    },
+    {
+      "environment": "02_ml_stats_timeseries_em_py312",
+      "severity": "gpu_excluded",
+      "item": "nvidia-nccl-cu13",
+      "detail": "GPU/NVIDIA transitive dependency excluded from default CPU set"
+    }
+  ],
+  "expansion": {
+    "12_data_storage_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 88,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "importlib_metadata-9.0.1-py3-none-any.whl",
+        "zipp-4.1.2-py3-none-any.whl"
+      ]
+    },
+    "12_data_storage_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 92,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "13_stats_timeseries_py310": {
+      "status": "partial",
+      "failed_packages": [
+        "ta",
+        "pandas-ta"
+      ],
+      "rejected": [],
+      "wheel_count": 96,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "13_stats_timeseries_py312": {
+      "status": "partial",
+      "failed_packages": [
+        "ta"
+      ],
+      "rejected": [],
+      "wheel_count": 102,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "14_ml_tooling_py310": {
+      "status": "partial",
+      "failed_packages": [
+        "lime"
+      ],
+      "rejected": [],
+      "wheel_count": 198,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "exceptiongroup-1.3.1-py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "14_ml_tooling_py312": {
+      "status": "partial",
+      "failed_packages": [
+        "lime"
+      ],
+      "rejected": [],
+      "wheel_count": 194,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "15_nlp_retrieval_py310": {
+      "status": "partial",
+      "failed_packages": [
+        "jieba",
+        "langdetect"
+      ],
+      "rejected": [],
+      "wheel_count": 194,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "exceptiongroup-1.3.1-py3-none-any.whl",
+        "graphlib_backport-1.1.0-py3-none-any.whl",
+        "importlib_metadata-9.0.1-py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl",
+        "zipp-4.1.2-py3-none-any.whl"
+      ]
+    },
+    "15_nlp_retrieval_py312": {
+      "status": "partial",
+      "failed_packages": [
+        "jieba",
+        "langdetect"
+      ],
+      "rejected": [],
+      "wheel_count": 187,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "graphlib_backport-1.1.0-py3-none-any.whl",
+        "httpx2_jsfetch-1.0-py3-none-any.whl",
+        "importlib_metadata-10.1.0-py3-none-any.whl",
+        "zipp-4.1.2-py3-none-any.whl"
+      ]
+    },
+    "16_media_ocr_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 50,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "16_media_ocr_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 46,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "17_web_services_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 138,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "exceptiongroup-1.3.1-py3-none-any.whl",
+        "taskgroup-0.2.2-py2.py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "17_web_services_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 139,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "httpx2_jsfetch-1.0-py3-none-any.whl",
+        "u_msgpack_python-2.8.0-py2.py3-none-any.whl"
+      ]
+    },
+    "18_database_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 46,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "18_database_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 44,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl"
+      ]
+    },
+    "19_scraping_automation_py310": {
+      "status": "partial",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 75,
+      "deps_complete": false,
+      "missing_runtime_deps": [
+        "pypydispatcher"
+      ],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "async_timeout-5.0.1-py3-none-any.whl",
+        "backports_zstd-1.8.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "exceptiongroup-1.3.1-py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "19_scraping_automation_py312": {
+      "status": "partial",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 72,
+      "deps_complete": false,
+      "missing_runtime_deps": [
+        "pypydispatcher"
+      ],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "backports_zstd-1.8.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+      ]
+    },
+    "20_documents_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 66,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "20_documents_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 67,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "21_viz_dashboard_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 152,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "exceptiongroup-1.3.1-py3-none-any.whl",
+        "overrides-7.7.0-py3-none-any.whl",
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "21_viz_dashboard_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 148,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    },
+    "21b_desktop_pyside6_py310": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 17,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": [
+        "tomli-2.5.0-py3-none-any.whl"
+      ]
+    },
+    "21b_desktop_pyside6_py312": {
+      "status": "downloaded",
+      "failed_packages": [],
+      "rejected": [],
+      "wheel_count": 16,
+      "deps_complete": true,
+      "missing_runtime_deps": [],
+      "excluded_gpu_deps": [],
+      "added_from_closure": []
+    }
+  }
+}

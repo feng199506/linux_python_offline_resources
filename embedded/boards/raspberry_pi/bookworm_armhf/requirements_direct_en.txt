@@ -1,0 +1,17 @@
+gpiozero
+lgpio
+rpi-lgpio
+RPi.GPIO
+pigpio
+smbus2
+spidev
+adafruit-blinka
+adafruit-circuitpython-busdevice
+adafruit-circuitpython-requests
+numpy
+pillow
+pyserial
+paho-mqtt
+flask
+requests
+gpiozero[extra]

@@ -1,0 +1,46 @@
+item,url,detail,category,time_utc
+dfu-util@0.11.0-arduino5,,tool not found in package index,arduino_tool,2026-10-30T05:12:07Z
+esp32c5-libs@3.3.9,,ESP32 extra chip tool not in basic kit (C5/C6/H2/P4 etc.),esp32_optional_tool,2026-10-30T05:12:10Z
+esp32c6-libs@3.3.9,,ESP32 extra chip tool not in basic kit (C5/C6/H2/P4 etc.),esp32_optional_tool,2026-10-30T05:12:10Z
+esp32h2-libs@3.3.9,,ESP32 extra chip tool not in basic kit (C5/C6/H2/P4 etc.),esp32_optional_tool,2026-10-30T05:12:10Z
+esp32p4-libs@3.3.9,,ESP32 extra chip tool not in basic kit (C5/C6/H2/P4 etc.),esp32_optional_tool,2026-10-30T05:12:10Z
+esp32p4_es-libs@3.3.9,,ESP32 extra chip tool not in basic kit (C5/C6/H2/P4 etc.),esp32_optional_tool,2026-10-30T05:12:10Z
+Adafruit_NeoPixel.tar.gz,https://github.com/adafruit/Adafruit_NeoPixel/archive/refs/tags/v1.12.5.tar.gz," sent, awaiting response... 302 Found
+Location: https://codeload.github.com/adafruit/Adafruit_NeoPixel/tar.gz/refs/tags/v1.12.5 [following]
+--2026-10-30 06:12:19--  https://codeload.github.com/adafruit/Adafruit_NeoPixel/tar.gz/refs/tags/v1.12.5
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connecte",boards/arduino_espressif_cores/common_arduino_libraries,2026-10-30T05:12:19Z
+DallasTemperature.tar.gz,https://github.com/milesburton/Arduino-Temperature-Control-Library/archive/refs/tags/3.11.0.tar.gz,"cation: https://codeload.github.com/milesburton/Arduino-Temperature-Control-Library/tar.gz/refs/tags/3.11.0 [following]
+--2026-10-30 06:12:20--  https://codeload.github.com/milesburton/Arduino-Temperature-Control-Library/tar.gz/refs/tags/3.11.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connecte",boards/arduino_espressif_cores/common_arduino_libraries,2026-10-30T05:12:20Z
+stlink-org/stlink,https://api.github.com/repos/stlink-org/stlink/releases/latest,no asset matching x86_64\.tar\.|linux,github_release,2026-10-30T05:12:33Z
+raspberrypi/picotool,https://api.github.com/repos/raspberrypi/picotool/releases/latest,no asset matching linux|x86_64|amd64,github_release,2026-10-30T05:12:33Z
+STM32F405DISC-20250911-v1.26.1.dfu,https://micropython.org/resources/firmware/STM32F405DISC-20250911-v1.26.1.dfu,"--2026-10-30 06:14:36--  https://micropython.org/resources/firmware/STM32F405DISC-20250911-v1.26.1.dfu
+Resolving micropython.org (micropython.org)... 176.58.119.26
+Connecting to micropython.org (micropython.org)|176.58.119.26|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-30 06:14:37 ERROR 404: Not Found.
+
+",firmware/micropython,2026-10-30T05:14:37Z
+STM32F405DISC-20241129-v1.24.1.dfu,https://micropython.org/resources/firmware/STM32F405DISC-20241129-v1.24.1.dfu,"--2026-10-30 06:14:37--  https://micropython.org/resources/firmware/STM32F405DISC-20241129-v1.24.1.dfu
+Resolving micropython.org (micropython.org)... 176.58.119.26
+Connecting to micropython.org (micropython.org)|176.58.119.26|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-30 06:14:37 ERROR 404: Not Found.
+
+",firmware/micropython,2026-10-30T05:14:37Z
+micropython_STM32F405DISC,https://micropython.org/resources/firmware/STM32F405DISC-20250911-v1.26.1.dfu,firmware URL not found,micropython,2026-10-30T05:14:37Z
+adafruit-circuitpython-espressif_esp32_devkitc_v4-en_US-10.0.3.bin,https://downloads.circuitpython.org/bin/espressif_esp32_devkitc_v4/en_US/adafruit-circuitpython-espressif_esp32_devkitc_v4-en_US-10.0.3.bin,"esp32_devkitc_v4/en_US/adafruit-circuitpython-espressif_esp32_devkitc_v4-en_US-10.0.3.bin
+Resolving downloads.circuitpython.org (downloads.circuitpython.org)... 2600:9000:28f7:6200:19:dd5d:d7c0:21, 2600:9000:28f7:6c00:19:dd5d:d7c0:21, 2600:9000:28f7:5200:19:dd5d:d7c0:21, ...
+Connecting to downloads.circuitpython.org (downloads.circuitpython.org)|2600:9000:28f7:6200:19:dd5d:d7c0:21|:443... connecte",firmware/circuitpython,2026-10-30T05:14:41Z
+adafruit-circuitpython-st_stm32f411ce_blackpill-en_US-10.0.3.uf2,https://downloads.circuitpython.org/bin/st_stm32f411ce_blackpill/en_US/adafruit-circuitpython-st_stm32f411ce_blackpill-en_US-10.0.3.uf2,"32f411ce_blackpill/en_US/adafruit-circuitpython-st_stm32f411ce_blackpill-en_US-10.0.3.uf2
+Resolving downloads.circuitpython.org (downloads.circuitpython.org)... 2600:9000:28f7:e200:19:dd5d:d7c0:21, 2600:9000:28f7:2e00:19:dd5d:d7c0:21, 2600:9000:28f7:5200:19:dd5d:d7c0:21, ...
+Connecting to downloads.circuitpython.org (downloads.circuitpython.org)|2600:9000:28f7:e200:19:dd5d:d7c0:21|:443... connecte",firmware/circuitpython,2026-10-30T05:14:42Z
+adafruit-circuitpython-bundle-10.x-mpy-20251029.zip,https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20251029/adafruit-circuitpython-bundle-10.x-mpy-20251029.zip,"--2026-10-30 06:14:42--  https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20251029/adafruit-circuitpython-bundle-10.x-mpy-20251029.zip
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-30 06:14:43 ERROR 404: Not Found.
+
+",firmware/library_bundles,2026-10-30T05:14:43Z

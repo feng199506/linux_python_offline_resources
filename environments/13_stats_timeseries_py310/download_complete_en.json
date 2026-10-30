@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "failed_packages": [
+    "ta",
+    "pandas-ta"
+  ],
+  "rejected": [],
+  "wheel_count": 96,
+  "deps_complete": true,
+  "missing_runtime_deps": [],
+  "excluded_gpu_deps": [],
+  "added_from_closure": []
+}

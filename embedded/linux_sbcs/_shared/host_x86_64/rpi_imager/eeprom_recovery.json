@@ -1,0 +1,43 @@
+{
+    "os_list": [
+        {
+            "name": "SD Card Boot",
+            "description": "Boot from SD Card if available, otherwise boot from USB",
+            "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+            "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2026.09.23-2711-0138c0/rpi-boot-eeprom-recovery-2026-09-23-2711-vl805-000138c0-sd.zip",
+            "extract_size": 270532608,
+            "image_download_size": 734654,
+            "release_date": "2026-09-23",
+            "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+            ]
+        },
+        {
+            "name": "USB Boot",
+            "description": "Boot from USB if available, otherwise boot from SD Card",
+            "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+            "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2026.09.23-2711-0138c0/rpi-boot-eeprom-recovery-2026-09-23-2711-vl805-000138c0-usb.zip",
+            "extract_size": 270532608,
+            "image_download_size": 734657,
+            "release_date": "2026-09-23",
+            "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+            ]
+        },
+        {
+            "name": "Network Boot",
+            "description": "Boot from network if SD Card boot fails",
+            "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+            "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2026.09.23-2711-0138c0/rpi-boot-eeprom-recovery-2026-09-23-2711-vl805-000138c0-network.zip",
+            "extract_size": 270532608,
+            "image_download_size": 734666,
+            "release_date": "2026-09-23",
+            "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+scipy
+pandas
+scikit-learn
+statsmodels
+xgboost
+lightgbm
+catboost
+hmmlearn
+matplotlib
+joblib
+threadpoolctl

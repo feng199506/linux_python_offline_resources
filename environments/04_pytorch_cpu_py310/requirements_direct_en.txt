@@ -1,0 +1,8 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+torch
+torchvision
+torchaudio

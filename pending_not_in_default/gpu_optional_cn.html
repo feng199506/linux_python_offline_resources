@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>GPU 待选（未下载）</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a> · <a href="gpu_optional_cn.md">Markdown 原文</a></div>
+<h1>GPU 待选（未下载）</h1>
+<p>硬件型号、驱动和 CUDA 版本未知，因此 <strong>没有</strong> 下载 CUDA/cuDNN 或 GPU wheel。</p>
+<p>若目标机器确认具备 NVIDIA GPU，需要单独准备，且不得并入当前 CPU 环境：</p>
+<ul><li>PyTorch：使用与驱动匹配的官方 CUDA 索引（例如 <code>https://download.pytorch.org/whl/cu128</code>），版本必须与驱动/CUDA 兼容</li><li>TensorFlow：Linux 原生 GPU 构建与 WSL2 方案不同，需按官方文档单独锁定</li><li>ONNX Runtime：使用 <code>onnxruntime-gpu</code>，不要与 <code>onnxruntime</code> CPU 混装</li></ul>
+<p>在目标机器先采集：<code>nvidia-smi</code>、驱动版本、CUDA 版本、GPU 型号，再决定下载哪一套。</p>
+</body></html>

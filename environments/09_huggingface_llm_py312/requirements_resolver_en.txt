@@ -1,0 +1,15 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+transformers
+datasets
+tokenizers
+accelerate
+peft
+trl
+safetensors
+huggingface_hub
+sentencepiece
+torch==2.15.0+cpu

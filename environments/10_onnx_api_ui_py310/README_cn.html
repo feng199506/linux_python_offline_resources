@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>ONNX CPU、API 与应用界面</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1200px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3;position:sticky;top:0}code{background:#f5f5f5;padding:0 3px}
+pre{background:#f5f5f5;padding:8px;overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}
+td.wide{max-width:420px;word-break:break-all}</style>
+</head><body>
+<div class="nav"><a href="../../index_cn.html">← 离线首页 index_cn.html</a> · <a href="README_cn.md">Markdown 原文</a></div>
+<h1>ONNX CPU、API 与应用界面</h1>
+<ul><li>环境编号：<a href="README_cn.html"><code>10_onnx_api_ui_py310</code></a></li><li>目标解释器：CPython 3.10，Linux x86-64，glibc</li><li>参考发行版：Ubuntu 22.04 LTS（glibc 2.35）、Ubuntu 24.04 LTS（glibc 2.39）</li><li>框架：ONNX Runtime CPU</li><li>wheel 数量：84</li><li>wheel 总大小：231531523 字节</li><li>由 wheel 标签推断的最低 glibc：2.28</li><li>本轮状态：downloaded（仅下载与静态检查，尚未在目标 Linux 上安装验证）</li></ul>
+<h2>用途与限制</h2>
+<p>仅 onnxruntime CPU。不与 onnxruntime-gpu 放在同一环境。</p>
+<p>本目录是按用途准备的通用 CPU 环境，不是全部历史研究项目的精确复现。
+不要与 <code>windows_python_offline_resources/</code> 或其他 Linux 组混装。</p>
+<p>默认集合 <strong>不适用于</strong>：ARM64、Alpine/musl、非 glibc 系统、GPU/CUDA。
+Ubuntu 22.04 需要 glibc ≥ 2.35 且不高于本环境实际 wheel 需求；若最低 glibc 标记 ≤ 2.35，则 22.04 与 24.04 都可作为候选。若某 wheel 需要更新的 glibc，22.04 不可用。</p>
+<h2>本组能做什么</h2>
+<p>用 ONNX Runtime CPU 做推理骨架，并用 FastAPI/Gradio/Streamlit 做本地界面。onnxruntime-gpu 不在本环境。</p>
+<p>目标解释器：<strong>CPython 3.10</strong>（Linux x86-64 glibc）。本轮未在目标机安装或运行，不能写成开箱即用。</p>
+<p>详细对照见 <a href="../../guides/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B8%8E%E5%8C%85%E7%94%A8%E9%80%94%E7%B4%A2%E5%BC%95_cn.html"><code>../../guides/常用工具与包用途索引_cn.md</code></a>；安装步骤见 <a href="../../guides/%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8_cn.html"><code>../../guides/离线安装与使用_cn.md</code></a>；最小示例见 <a href="../../guides/%E5%B8%B8%E8%A7%81%E4%BB%BB%E5%8A%A1%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8_cn.html"><code>../../guides/常见任务快速入门_cn.md</code></a>。</p>
+<h2>常用包说明</h2>
+<table><thead><tr><th>包</th><th>本环境版本</th><th>作用</th><th>额外依赖</th><th>官方文档</th></tr></thead><tbody><tr><td><code>onnxruntime</code></td><td>1.23.2</td><td>ONNX CPU 推理</td><td>需要 .onnx 文件</td><td><a href="https://onnxruntime.ai/docs/">onnxruntime 文档</a></td></tr><tr><td><code>onnx</code></td><td>1.23.2</td><td>模型格式</td><td>否</td><td><a href="https://onnx.ai/">onnx 文档</a></td></tr><tr><td><code>fastapi</code></td><td>0.162.0</td><td>HTTP API</td><td>对外才要网</td><td><a href="https://fastapi.tiangolo.com/">fastapi 文档</a></td></tr><tr><td><code>gradio</code></td><td>5.3.0</td><td>演示 UI</td><td>分享 Hub 要网</td><td><a href="https://www.gradio.app/docs/">gradio 文档</a></td></tr><tr><td><code>streamlit</code></td><td>1.65.0</td><td>数据应用 UI</td><td>本地浏览器</td><td><a href="https://docs.streamlit.io/">streamlit 文档</a></td></tr></tbody></table>
+<p>传递依赖只列在 <a href="requirements_lock_en.txt"><code>requirements_lock_en.txt</code></a> / <a href="wheel_inventory_cn.html"><code>wheel_inventory_cn.csv</code></a>，不逐个写教程。</p>
+<h2>离线安装</h2>
+<ol><li>准备 CPython 3.10 x86-64 运行时（推荐解压 <a href="../../runtimes/python_build_standalone/"><code>runtimes/python_build_standalone/</code></a> 中对应 <code>install_only</code> 包，或自行从官方源码构建）。</li><li>该运行时是 <strong>Astral/indygreg python-build-standalone 第三方构建</strong>，不是 python.org 官方 Linux 二进制。</li><li>指定解释器并安装：</li></ol>
+<pre><code>export PYTHON_BIN=/path/to/python3.10
+bash ./install_offline_en.sh
+&quot;$PYTHON_BIN&quot;/../bin/python -m pip  # 不使用
+./venv/bin/python ./check_environment_en.py</code></pre>
+<p>安装脚本使用 <code>venv</code> + <code>pip install --no-index --find-links wheelhouse</code>。
+失败即停止，不会静默联网，不会修改系统 Python，不会调用 sudo。</p>
+<h2>文件</h2>
+<ul><li><a href="requirements_direct_en.txt"><code>requirements_direct_en.txt</code></a>：直接依赖</li><li><a href="requirements_lock_en.txt"><code>requirements_lock_en.txt</code></a>：锁定版本（含传递依赖）</li><li><a href="wheelhouse/"><code>wheelhouse/</code></a>：完整 wheel</li><li><a href="wheel_inventory_cn.html"><code>wheel_inventory_cn.csv</code></a>：包名、版本、来源、大小、平台、最低 glibc</li><li><a href="install_offline_en.sh"><code>install_offline_en.sh</code></a></li><li><a href="check_environment_en.py"><code>check_environment_en.py</code></a></li></ul>
+<h2>未完成 / 注意</h2>
+<ul><li>失败的直接依赖：无</li><li>静态检查判定为不适合默认 Linux x86-64 的 wheel：无</li><li>源码包（不能当 wheel 安装）：无</li><li>系统库（OpenMP、FFmpeg、Graphviz、音频等）见仓库根目录 <a href="../../external_dependencies_cn.html"><code>external_dependencies_cn.csv</code></a> 与 <a href="../../system_dependencies/"><code>system_dependencies/</code></a>。</li><li>本轮 <strong>没有</strong> 在目标 Ubuntu 22.04/24.04 上创建 venv 或执行导入检查。</li></ul>
+</body></html>

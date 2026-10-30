@@ -1,0 +1,10 @@
+pip
+setuptools
+wheel
+packaging
+numpy<2
+gpflow==2.11.2
+tensorflow-cpu==2.18.0
+tensorflow-probability==0.25.0
+tf-keras
+scipy

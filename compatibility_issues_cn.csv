@@ -1,0 +1,8 @@
+environment,severity,item,detail
+02_ml_stats_timeseries_em_py310,gpu_excluded,nvidia-nccl-cu12,GPU/NVIDIA transitive dependency excluded from default CPU set; CPU xgboost/lightgbm wheels remain
+02_ml_stats_timeseries_em_py312,gpu_excluded,nvidia-nccl-cu13,GPU/NVIDIA transitive dependency excluded from default CPU set; CPU xgboost/lightgbm wheels remain
+all,info,pywinpty,Windows-only jupyter extra (os_name == nt); not required on Linux and not downloaded
+06_bayesian_mcmc,external,CmdStan,cmdstanpy wheel downloaded; CmdStan C++ toolchain not downloaded
+11_optimization_control,external,slycot,optional python-control backend usually needs compile; not in default wheelhouse
+gpu,pending,CUDA,hardware unknown; GPU wheels not downloaded
+07b_gpflow_tf218,info,tensorflow vs tensorflow-cpu,"GPflow Requires-Dist names tensorflow, so the closure also saved the official tensorflow 2.18.1 manylinux wheel besides tensorflow-cpu==2.18.0. No separate CUDA toolkit was downloaded. Keep this group separate from 07_tensorflow_cpu."

@@ -1,0 +1,8 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+torch==2.14.1+cpu
+torchvision==0.29.2+cpu
+torchaudio==2.11.1+cpu

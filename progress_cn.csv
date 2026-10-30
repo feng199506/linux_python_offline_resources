@@ -1,0 +1,186 @@
+﻿time_utc,step,status,detail
+2026-10-30T04:33:42Z,01_scientific_notebook_py310,start,科学计算与 Notebook
+2026-10-30T04:34:02Z,01_scientific_notebook_py310,downloaded,wheels=125 bytes=230049496
+2026-10-30T04:34:02Z,all,finished_pass,groups=1
+2026-10-30T04:34:46Z,debs_ubuntu_22.04_runtime,ok,ok=224 fail=0 missing_names=0
+2026-10-30T04:34:53Z,debs_ubuntu_22.04_build,ok,ok=121 fail=0 missing_names=0
+2026-10-30T04:35:16Z,debs_ubuntu_24.04_runtime,ok,ok=226 fail=0 missing_names=0
+2026-10-30T04:35:25Z,debs_ubuntu_24.04_build,ok,ok=127 fail=0 missing_names=0
+2026-10-30T04:35:25Z,01_scientific_notebook_py310,start,科学计算与 Notebook
+2026-10-30T04:35:25Z,01_scientific_notebook_py310,downloaded,wheels=125 bytes=230049496
+2026-10-30T04:35:25Z,01_scientific_notebook_py312,start,科学计算与 Notebook（新 Python）
+2026-10-30T04:35:33Z,01_scientific_notebook_py312,downloaded,wheels=124 bytes=233424932
+2026-10-30T04:35:33Z,02_ml_stats_timeseries_em_py310,start,传统机器学习、统计、时间序列及 EM
+2026-10-30T04:35:47Z,02_ml_stats_timeseries_em_py310,downloaded,wheels=35 bytes=359631843
+2026-10-30T04:35:47Z,02_ml_stats_timeseries_em_py312,start,传统机器学习、统计、时间序列及 EM（新 Python）
+2026-10-30T04:35:59Z,02_ml_stats_timeseries_em_py312,downloaded,wheels=34 bytes=282700184
+2026-10-30T04:35:59Z,03_signal_audio_image_py310,start,信号、音频与图像处理
+2026-10-30T04:36:14Z,03_signal_audio_image_py310,downloaded,wheels=72 bytes=268977938
+2026-10-30T04:36:14Z,03_signal_audio_image_py312,start,信号、音频与图像处理（新 Python）
+2026-10-30T04:36:25Z,03_signal_audio_image_py312,downloaded,wheels=69 bytes=266422082
+2026-10-30T04:36:25Z,04_pytorch_cpu_py310,start,PyTorch CPU
+2026-10-30T04:36:41Z,04_pytorch_cpu_py310,partial,wheels=8 bytes=217922090
+2026-10-30T04:36:41Z,04_pytorch_cpu_py312,start,PyTorch CPU（新 Python）
+2026-10-30T04:39:43Z,01_scientific_notebook_py310,start,科学计算与 Notebook
+2026-10-30T04:40:10Z,01_scientific_notebook_py310,partial,wheels=128 bytes=230098833
+2026-10-30T04:40:10Z,01_scientific_notebook_py312,start,科学计算与 Notebook（新 Python）
+2026-10-30T04:40:30Z,01_scientific_notebook_py312,partial,wheels=124 bytes=233424932
+2026-10-30T04:40:30Z,02_ml_stats_timeseries_em_py310,start,传统机器学习、统计、时间序列及 EM
+2026-10-30T04:40:34Z,02_ml_stats_timeseries_em_py310,downloaded,wheels=35 bytes=359631843
+2026-10-30T04:40:34Z,02_ml_stats_timeseries_em_py312,start,传统机器学习、统计、时间序列及 EM（新 Python）
+2026-10-30T04:40:38Z,02_ml_stats_timeseries_em_py312,downloaded,wheels=34 bytes=282700184
+2026-10-30T04:40:38Z,03_signal_audio_image_py310,start,信号、音频与图像处理
+2026-10-30T04:40:45Z,03_signal_audio_image_py310,downloaded,wheels=73 bytes=268984171
+2026-10-30T04:40:45Z,03_signal_audio_image_py312,start,信号、音频与图像处理（新 Python）
+2026-10-30T04:40:51Z,03_signal_audio_image_py312,downloaded,wheels=69 bytes=266422082
+2026-10-30T04:40:51Z,04_pytorch_cpu_py310,start,PyTorch CPU
+2026-10-30T04:40:59Z,04_pytorch_cpu_py310,downloaded,wheels=17 bytes=233962432
+2026-10-30T04:40:59Z,04_pytorch_cpu_py312,start,PyTorch CPU（新 Python）
+2026-10-30T04:41:05Z,04_pytorch_cpu_py312,downloaded,wheels=17 bytes=247890784
+2026-10-30T04:41:05Z,05_gpr_bayesopt_py310,start,GPR 与贝叶斯优化（PyTorch 路线）
+2026-10-30T04:41:15Z,05_gpr_bayesopt_py310,downloaded,wheels=35 bytes=291189314
+2026-10-30T04:41:15Z,05_gpr_bayesopt_py312,start,GPR 与贝叶斯优化（PyTorch 路线，新 Python）
+2026-10-30T04:41:25Z,05_gpr_bayesopt_py312,downloaded,wheels=32 bytes=303160869
+2026-10-30T04:41:25Z,06_bayesian_mcmc_py310,start,贝叶斯计算与 Monte Carlo
+2026-10-30T04:41:30Z,06_bayesian_mcmc_py310,downloaded,wheels=45 bytes=106976544
+2026-10-30T04:41:30Z,06_bayesian_mcmc_py312,start,贝叶斯计算与 Monte Carlo（新 Python）
+2026-10-30T04:41:34Z,06_bayesian_mcmc_py312,downloaded,wheels=41 bytes=163939814
+2026-10-30T04:41:34Z,07_tensorflow_cpu_py310,start,TensorFlow CPU
+2026-10-30T04:42:00Z,07_tensorflow_cpu_py310,downloaded,wheels=33 bytes=340584060
+2026-10-30T04:42:00Z,07_tensorflow_cpu_py312,start,TensorFlow CPU（新 Python）
+2026-10-30T04:42:09Z,07_tensorflow_cpu_py312,downloaded,wheels=33 bytes=337018938
+2026-10-30T04:42:09Z,07b_gpflow_tf218_py310,start,GPflow（TensorFlow 2.18 专用）
+2026-10-30T04:43:33Z,07b_gpflow_tf218_py310,downloaded,wheels=53 bytes=976142666
+2026-10-30T04:43:33Z,07b_gpflow_tf218_py312,start,GPflow（TensorFlow 2.18 专用，新 Python）
+2026-10-30T04:44:21Z,07b_gpflow_tf218_py312,downloaded,wheels=52 bytes=969570552
+2026-10-30T04:44:21Z,08_rl_basics_py310,start,强化学习基础
+2026-10-30T04:44:35Z,08_rl_basics_py310,downloaded,wheels=37 bytes=282746998
+2026-10-30T04:44:35Z,08_rl_basics_py312,start,强化学习基础（新 Python）
+2026-10-30T04:44:46Z,08_rl_basics_py312,downloaded,wheels=36 bytes=296582228
+2026-10-30T04:44:46Z,09_huggingface_llm_py310,start,Hugging Face 与大模型基础
+2026-10-30T04:45:11Z,09_huggingface_llm_py310,downloaded,wheels=63 bytes=322647778
+2026-10-30T04:45:11Z,09_huggingface_llm_py312,start,Hugging Face 与大模型基础（新 Python）
+2026-10-30T04:45:35Z,09_huggingface_llm_py312,downloaded,wheels=60 bytes=339457398
+2026-10-30T04:45:35Z,10_onnx_api_ui_py310,start,ONNX CPU、API 与应用界面
+2026-10-30T04:45:50Z,10_onnx_api_ui_py310,downloaded,wheels=84 bytes=231531523
+2026-10-30T04:45:50Z,10_onnx_api_ui_py312,start,ONNX CPU、API 与应用界面（新 Python）
+2026-10-30T04:46:00Z,10_onnx_api_ui_py312,downloaded,wheels=77 bytes=229294366
+2026-10-30T04:46:00Z,11_optimization_control_py310,start,优化与控制计算
+2026-10-30T04:46:11Z,11_optimization_control_py310,downloaded,wheels=28 bytes=220502065
+2026-10-30T04:46:11Z,11_optimization_control_py312,start,优化与控制计算（新 Python）
+2026-10-30T04:46:22Z,11_optimization_control_py312,downloaded,wheels=31 bytes=241387896
+2026-10-30T04:46:22Z,all,finished_pass,groups=24
+2026-10-30T04:47:00Z,01_scientific_notebook_py310,start,科学计算与 Notebook
+2026-10-30T04:47:06Z,01_scientific_notebook_py310,downloaded,wheels=128 bytes=230098833
+2026-10-30T04:47:06Z,01_scientific_notebook_py312,start,科学计算与 Notebook（新 Python）
+2026-10-30T04:47:11Z,01_scientific_notebook_py312,downloaded,wheels=124 bytes=233424932
+2026-10-30T04:47:11Z,02_ml_stats_timeseries_em_py310,start,传统机器学习、统计、时间序列及 EM
+2026-10-30T04:47:11Z,02_ml_stats_timeseries_em_py310,downloaded,wheels=35 bytes=359631843
+2026-10-30T04:47:11Z,02_ml_stats_timeseries_em_py312,start,传统机器学习、统计、时间序列及 EM（新 Python）
+2026-10-30T04:47:11Z,02_ml_stats_timeseries_em_py312,downloaded,wheels=34 bytes=282700184
+2026-10-30T04:47:11Z,03_signal_audio_image_py310,start,信号、音频与图像处理
+2026-10-30T04:47:12Z,03_signal_audio_image_py310,downloaded,wheels=73 bytes=268984171
+2026-10-30T04:47:12Z,03_signal_audio_image_py312,start,信号、音频与图像处理（新 Python）
+2026-10-30T04:47:12Z,03_signal_audio_image_py312,downloaded,wheels=69 bytes=266422082
+2026-10-30T04:47:12Z,04_pytorch_cpu_py310,start,PyTorch CPU
+2026-10-30T04:47:15Z,04_pytorch_cpu_py310,downloaded,wheels=17 bytes=233962432
+2026-10-30T04:47:15Z,04_pytorch_cpu_py312,start,PyTorch CPU（新 Python）
+2026-10-30T04:47:18Z,04_pytorch_cpu_py312,downloaded,wheels=17 bytes=247890784
+2026-10-30T04:47:18Z,05_gpr_bayesopt_py310,start,GPR 与贝叶斯优化（PyTorch 路线）
+2026-10-30T04:47:21Z,05_gpr_bayesopt_py310,downloaded,wheels=35 bytes=291189314
+2026-10-30T04:47:21Z,05_gpr_bayesopt_py312,start,GPR 与贝叶斯优化（PyTorch 路线，新 Python）
+2026-10-30T04:47:23Z,05_gpr_bayesopt_py312,downloaded,wheels=32 bytes=303160869
+2026-10-30T04:47:23Z,06_bayesian_mcmc_py310,start,贝叶斯计算与 Monte Carlo
+2026-10-30T04:47:23Z,06_bayesian_mcmc_py310,downloaded,wheels=45 bytes=106976544
+2026-10-30T04:47:23Z,06_bayesian_mcmc_py312,start,贝叶斯计算与 Monte Carlo（新 Python）
+2026-10-30T04:47:24Z,06_bayesian_mcmc_py312,downloaded,wheels=41 bytes=163939814
+2026-10-30T04:47:24Z,07_tensorflow_cpu_py310,start,TensorFlow CPU
+2026-10-30T04:47:24Z,07_tensorflow_cpu_py310,downloaded,wheels=33 bytes=340584060
+2026-10-30T04:47:24Z,07_tensorflow_cpu_py312,start,TensorFlow CPU（新 Python）
+2026-10-30T04:47:25Z,07_tensorflow_cpu_py312,downloaded,wheels=33 bytes=337018938
+2026-10-30T04:47:25Z,07b_gpflow_tf218_py310,start,GPflow（TensorFlow 2.18 专用）
+2026-10-30T04:47:27Z,07b_gpflow_tf218_py310,downloaded,wheels=53 bytes=976142666
+2026-10-30T04:47:27Z,07b_gpflow_tf218_py312,start,GPflow（TensorFlow 2.18 专用，新 Python）
+2026-10-30T04:47:27Z,07b_gpflow_tf218_py312,downloaded,wheels=52 bytes=969570552
+2026-10-30T04:47:27Z,08_rl_basics_py310,start,强化学习基础
+2026-10-30T04:47:29Z,08_rl_basics_py310,downloaded,wheels=37 bytes=282746998
+2026-10-30T04:47:29Z,08_rl_basics_py312,start,强化学习基础（新 Python）
+2026-10-30T04:47:32Z,08_rl_basics_py312,downloaded,wheels=36 bytes=296582228
+2026-10-30T04:47:32Z,09_huggingface_llm_py310,start,Hugging Face 与大模型基础
+2026-10-30T04:47:34Z,09_huggingface_llm_py310,downloaded,wheels=63 bytes=322647778
+2026-10-30T04:47:34Z,09_huggingface_llm_py312,start,Hugging Face 与大模型基础（新 Python）
+2026-10-30T04:47:36Z,09_huggingface_llm_py312,downloaded,wheels=60 bytes=339457398
+2026-10-30T04:47:36Z,10_onnx_api_ui_py310,start,ONNX CPU、API 与应用界面
+2026-10-30T04:47:36Z,10_onnx_api_ui_py310,downloaded,wheels=84 bytes=231531523
+2026-10-30T04:47:36Z,10_onnx_api_ui_py312,start,ONNX CPU、API 与应用界面（新 Python）
+2026-10-30T04:47:36Z,10_onnx_api_ui_py312,downloaded,wheels=77 bytes=229294366
+2026-10-30T04:47:36Z,11_optimization_control_py310,start,优化与控制计算
+2026-10-30T04:47:37Z,11_optimization_control_py310,downloaded,wheels=28 bytes=220502065
+2026-10-30T04:47:37Z,11_optimization_control_py312,start,优化与控制计算（新 Python）
+2026-10-30T04:47:37Z,11_optimization_control_py312,downloaded,wheels=31 bytes=241387896
+2026-10-30T04:47:37Z,all,finished_pass,groups=24
+2026-10-30T04:56:28Z,expansion_debs_ubuntu_22.04,ok,ok=216 fail=0 missing=1
+2026-10-30T04:56:53Z,expansion_debs_ubuntu_24.04,ok,ok=231 fail=0 missing=1
+2026-10-30T04:56:55Z,12_data_storage_py310,start,数据处理与存储
+2026-10-30T04:57:16Z,12_data_storage_py310,downloaded,wheels=88 bytes=411766258
+2026-10-30T04:57:16Z,12_data_storage_py312,start,数据处理与存储（新 Python）
+2026-10-30T04:57:26Z,12_data_storage_py312,downloaded,wheels=92 bytes=412005083
+2026-10-30T04:57:26Z,13_stats_timeseries_py310,start,统计、计量与时间序列
+2026-10-30T04:59:00Z,13_stats_timeseries_py310,partial,wheels=96 bytes=299682005
+2026-10-30T04:59:00Z,13_stats_timeseries_py312,start,统计、计量与时间序列（新 Python）
+2026-10-30T05:00:08Z,13_stats_timeseries_py312,partial,wheels=102 bytes=387879712
+2026-10-30T05:00:08Z,14_ml_tooling_py310,start,机器学习工程工具
+2026-10-30T05:01:20Z,14_ml_tooling_py310,partial,wheels=198 bytes=387595742
+2026-10-30T05:01:20Z,14_ml_tooling_py312,start,机器学习工程工具（新 Python）
+2026-10-30T05:02:17Z,14_ml_tooling_py312,partial,wheels=194 bytes=377401224
+2026-10-30T05:02:17Z,15_nlp_retrieval_py310,start,NLP 与检索 / RAG 基础
+2026-10-30T05:03:56Z,15_nlp_retrieval_py310,partial,wheels=194 bytes=380661865
+2026-10-30T05:03:56Z,15_nlp_retrieval_py312,start,NLP 与检索 / RAG 基础（新 Python）
+2026-10-30T05:05:09Z,15_nlp_retrieval_py312,partial,wheels=187 bytes=388158658
+2026-10-30T05:05:09Z,16_media_ocr_py310,start,图像、音视频与 OCR
+2026-10-30T05:05:17Z,16_media_ocr_py310,downloaded,wheels=50 bytes=332321228
+2026-10-30T05:05:17Z,16_media_ocr_py312,start,图像、音视频与 OCR（新 Python）
+2026-10-30T05:05:22Z,16_media_ocr_py312,downloaded,wheels=46 bytes=326271492
+2026-10-30T05:05:22Z,17_web_services_py310,start,Web 与服务
+2026-10-30T05:05:34Z,17_web_services_py310,downloaded,wheels=138 bytes=49392230
+2026-10-30T05:05:34Z,17_web_services_py312,start,Web 与服务（新 Python）
+2026-10-30T05:05:41Z,17_web_services_py312,downloaded,wheels=139 bytes=52637429
+2026-10-30T05:05:41Z,18_database_py310,start,数据库与数据接入
+2026-10-30T05:05:48Z,18_database_py310,downloaded,wheels=46 bytes=157267112
+2026-10-30T05:05:48Z,18_database_py312,start,数据库与数据接入（新 Python）
+2026-10-30T05:06:00Z,18_database_py312,downloaded,wheels=44 bytes=160823310
+2026-10-30T05:06:00Z,19_scraping_automation_py310,start,爬虫与自动化
+2026-10-30T05:06:28Z,19_scraping_automation_py310,partial,wheels=75 bytes=87542905
+2026-10-30T05:06:28Z,19_scraping_automation_py312,start,爬虫与自动化（新 Python）
+2026-10-30T05:06:50Z,19_scraping_automation_py312,partial,wheels=72 bytes=87627370
+2026-10-30T05:06:50Z,20_documents_py310,start,文档处理
+2026-10-30T05:06:57Z,20_documents_py310,downloaded,wheels=66 bytes=128836920
+2026-10-30T05:06:57Z,20_documents_py312,start,文档处理（新 Python）
+2026-10-30T05:07:03Z,20_documents_py312,downloaded,wheels=67 bytes=175689230
+2026-10-30T05:07:03Z,21_viz_dashboard_py310,start,可视化与仪表板
+2026-10-30T05:07:12Z,21_viz_dashboard_py310,downloaded,wheels=152 bytes=182229722
+2026-10-30T05:07:13Z,21_viz_dashboard_py312,start,可视化与仪表板（新 Python）
+2026-10-30T05:07:19Z,21_viz_dashboard_py312,downloaded,wheels=148 bytes=173785078
+2026-10-30T05:07:19Z,21b_desktop_pyside6_py310,start,桌面 GUI（PySide6）
+2026-10-30T05:07:26Z,21b_desktop_pyside6_py310,downloaded,wheels=17 bytes=289545953
+2026-10-30T05:07:26Z,21b_desktop_pyside6_py312,start,桌面 GUI（PySide6）（新 Python）
+2026-10-30T05:07:28Z,21b_desktop_pyside6_py312,downloaded,wheels=16 bytes=289457421
+2026-10-30T05:07:28Z,22_engineering_py310,start,工程工具
+2026-10-30T05:11:32Z,embedded,start,host tools + board resources
+2026-10-30T05:12:19Z,embedded,missing,"Adafruit_NeoPixel.tar.gz:  sent, awaiting response... 302 Found
+Location: https://codeload.github.com/adafruit/Adafruit_NeoPixel/tar.gz/refs/tags/v1.12.5 [following]
+--2026-10-30 06:12:19--  https://c"
+2026-10-30T05:12:20Z,embedded,missing,"DallasTemperature.tar.gz: cation: https://codeload.github.com/milesburton/Arduino-Temperature-Control-Library/tar.gz/refs/tags/3.11.0 [following]
+--2026-10-30 06:12:20--  https://codeload.github.com/m"
+2026-10-30T05:14:37Z,embedded,missing,"STM32F405DISC-20250911-v1.26.1.dfu: --2026-10-30 06:14:36--  https://micropython.org/resources/firmware/STM32F405DISC-20250911-v1.26.1.dfu
+Resolving micropython.org (micropython.org)... 176.58.119.26
+"
+2026-10-30T05:14:37Z,embedded,missing,"STM32F405DISC-20241129-v1.24.1.dfu: --2026-10-30 06:14:37--  https://micropython.org/resources/firmware/STM32F405DISC-20241129-v1.24.1.dfu
+Resolving micropython.org (micropython.org)... 176.58.119.26
+"
+2026-10-30T05:14:41Z,embedded,missing,"adafruit-circuitpython-espressif_esp32_devkitc_v4-en_US-10.0.3.bin: esp32_devkitc_v4/en_US/adafruit-circuitpython-espressif_esp32_devkitc_v4-en_US-10.0.3.bin
+Resolving downloads.circuitpython.org (dow"
+2026-10-30T05:14:42Z,embedded,missing,"adafruit-circuitpython-st_stm32f411ce_blackpill-en_US-10.0.3.uf2: 32f411ce_blackpill/en_US/adafruit-circuitpython-st_stm32f411ce_blackpill-en_US-10.0.3.uf2
+Resolving downloads.circuitpython.org (downl"
+2026-10-30T05:14:43Z,embedded,missing,adafruit-circuitpython-bundle-10.x-mpy-20251029.zip: --2026-10-30 06:14:42--  https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20251029/adafruit-circuitpython-bundle-10.x-mp
+2026-10-30T05:14:44Z,embedded,finished_pass,miss=16 fw=14 tools=33

@@ -1,0 +1,7 @@
+pip
+setuptools
+wheel
+packaging
+numpy
+tensorflow-cpu
+keras
